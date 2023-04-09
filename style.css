@@ -55,27 +55,22 @@ a:hover,
 a:active{
   text-decoration: none;
 }
-
 .wrapper{
   position: relative;
 }
-
 .slide-apparel {
     width:94%;
     margin:0 auto;
  }
- 
  .slide-apparel img {
      width:400px;
      height: 400px;
      height:auto;
      border-radius: 2%;
  }
- 
  .slide-apparel .slick-slide {
      margin:0 10px;
  }
- 
  
  .slick-prev, 
  .slick-next {
