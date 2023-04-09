@@ -1,103 +1,148 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>joie-infinie.</title>
+    <title>joie-infinie.demo</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
- <header id="">
-   <p>meet suit</p>
-   <h1>joie infinie.</h1>
- </header>
-      <nav>
+    <div class="header">
         <p>meet suit</p>
-        <div class="title">joie infinie.</div>
-          <ul>
-            <li><a href="#">TOP</a><p>トップ</p></li>
-            <li><img src="" alt=""><a href="#">joie infinie...Loves</a></li>
-            <li><a href="#">News</a><p>ニュース</p>
-              <p>shops</p>
-              <p>for Buisiness</p>
-            </li>
-            <li><a href="">ジョワ<span>インフィニ</span><span>Ch</span></a></li>
-            <p class="bordr-line"></p>
-            <div class="social">
-              <p>ONLINE STORE</p>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+        <h1>joie infinie.</h1>
+      </div>
+      <div class="drop_down">
+           <nav>
+               <ul>
+                 <p>meet suit</p>
+             <h1>joie infinie.</h1>
+                 <li><a href="#">TOP</a><p>トップ</p></li>
+                 <li><img src="" alt=""><a href="#">joie infinie...Loves</a></li>
+                 <li><a href="#">News</a><p>ニュース</p>
+                   <p>shops</p>
+                   <p>for Buisiness</p>
+                 </li>
+                 <li><a href="">ジョワ<span>インフィニ</span><span>Ch</span></a></li>
+                 <p class="bordr-line"></p>
+               </ul>
+           </nav>
+      </div>
+           <div class="wrapper">
+            <ul class="slider">
+                <img src="images/movie.png" >
+                <img src="images/camp.png" >
+                <img src="images/cest-la-vie.png" >
+                <img src="images/work-joy.png" >
+                <img src="images/spring.png">
+                <img src="images/cat.png" >
+            </ul>
+          </div>
+          <div class="items">
+            <h1>PICKUP 
+                <br>ITEMS </h1>
+            <div class="sub-title">
+                joie infinie.の
+                <br>注目ファッションアイテムをセレクト
             </div>
-          </ul>
-      </nav>
-      <div class="wrapper">
-        <div class="main">
-        <ul class="slider">
-            <img src="images/joie-infinie/movie.png" width="400px">
-            <img src="images/joie-infinie/camp.png" width="400px">
-            <img src="images/joie-infinie/cest-la-vie.png" width="400px">
-            <img src="images/joie-infinie/work-joy.png" width="400px">
-            <img src="images/joie-infinie/spring.png"width="400px">
-            <img src="images/joie-infinie/cat.png" width="400px">
-        </ul>
-      </div>
-      </div>
-        
-      
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
-
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-        </div>
-        <script>
-         $('.slider').slick({
-           autoplay: true,//自動的に動き出すか。初期値はfalse。
-           autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
-           speed:1000,//スライドの動きのスピード。初期値は300。
-           infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-           slidesToShow: 1,//スライドを画面に3枚見せる
-           slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
-           arrows: true,//左右の矢印あり
-           prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-           nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-           dots: true,//下部ドットナビゲーションの表示
-           pauseOnFocus: false,//フォーカスで一時停止を無効
-           pauseOnHover: false,//マウスホバーで一時停止を無効
-           pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+            <div class="apparel">
+                <h2>APPAREL</h2>
+            </div>
+            <div id="sub-slider">
+                <div id="int-slider">
+                    <img src="images/camp.png">
+                    <img src="images/cest-la-vie.png">
+                    <img src="images/movie.png">
+                    <img src="images/cat.png">
+                </div>
+                <div id="info-slider">
+                <div class="text">
+                    <h2>The world of Super Car</h2>
+                    <p>Gorgeous</p>
+                    <a>Racing Bloodline</a>
+                </div>
+                <div class="text">
+                    <p>Fabulous</p>
+                    <a>Fantastic: back to racing</a>
+                </div>
+                <div class="text">
+                    <p>Handle</p>
+                    <a>Take you special world</a>
+                </div>
+                <div class="text">
+                    <p>Engine</p>
+                    <a>The brilliant new customizations</a>
+                </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
+    <script>
+             $('.slider').slick({
+    autoplay: true,//自動的に動き出すか。初期値はfalse。
+    autoplaySpeed: 4000,//次のスライドに切り替わる待ち時間
+    speed:2000,//スライドの動きのスピード。初期値は300。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 1,//スライドを画面に3枚見せる
+    slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+    arrows: true,//左右の矢印あり
+    dots: true,//下部ドットナビゲーションの表示
+        pauseOnFocus: false,//フォーカスで一時停止を無効
+        pauseOnHover: false,//マウスホバーで一時停止を無効
+        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
     });
 
 //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
-$('.main-slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
-    $('.main-slider').slick('slickPlay');
+$('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
+    $('.slider').slick('slickPlay');
 });
-     </script>
-</body>
-<footer>
-
-        <div class="items">
-          <h1>PICKUP <span>ITEMS</span> </h1>
-          <div class="sub-title">
-            <span>注目ファッションアイテムをセレクト</span>
-          </div>
-          <div class="slide-apeal"></div>
-        </div>
-      </div>
+</script>
+<script>
+    $('.slide-apparel').slick({
+    autoplay: true,//自動的に動き出すか。初期値はfalse。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 3,//スライドを画面に3枚見せる
+    slidesToScroll: 3,//1回のスクロールで3枚の写真を移動して見せる
+    autoplaySpeed: 2000,//次のスライドに切り替わる待ち時間
+    speed:1000,//スライドの動きのスピード。初期値は300。
+    dots: true,//下部ドットナビゲーションの表示
+    responsive: [
+        
+      {
+          
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,//スライドを画面に2枚見せる
+        slidesToScroll: 2,//1回のスクロールで2枚の写真を移動して見せる
+      }
+    },
+    {
+      breakpoint: 526,
+      settings: {
+        slidesToShow: 1.5,//スライドを画面に1枚見せる
+        slidesToScroll: 1.5,//1回のスクロールで1枚の写真を移動して見せる
+      }
+    }
+  ]
+  });
   
-     
+</script>
+<script>
+    $("#int-slider").slick({
+    prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+    nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+    dots: true,//下部ドットナビゲーションの表示
+    asNavFor:"#info-slider",
+})
+$("#info-slider").slick({
+    draggable:false,         
+    arrows:false         
+})
+</script>
+    </body>
     
-    <p class="end">CopyRight</p>
-  </footer>
+      <footer>
+        <p>CopyRight@2023 joie infinie.demo</p>
+      </footer>
 </html>
