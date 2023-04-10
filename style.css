@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family: "M PLUS Rounded 1c";
 }
+body{
+  max-width: 100%;
+}
+.header {
+  height: 165px;
+}
 nav {
     display: none;
 }
@@ -39,7 +45,7 @@ nav {
     height:12px;
     display:block;
     border-radius:50%;
-    background-color: rgb(218, 214, 214);
+    background-color: rgb(173, 172, 172);
 }
 
 .slick-dots .slick-active button{
@@ -55,22 +61,27 @@ a:hover,
 a:active{
   text-decoration: none;
 }
+
 .wrapper{
   position: relative;
 }
+
 .slide-apparel {
     width:94%;
     margin:0 auto;
  }
+ 
  .slide-apparel img {
      width:400px;
      height: 400px;
      height:auto;
      border-radius: 2%;
  }
+ 
  .slide-apparel .slick-slide {
      margin:0 10px;
  }
+ 
  
  .slick-prev, 
  .slick-next {
@@ -94,25 +105,9 @@ a:active{
      transform: rotate(45deg);
  }
  
-
- 
- 
- 
- 
- body{
-   background:#eee;
- }
- 
  h2,p {
      text-align:center;
      padding:20px;
  }
 
- a{
-   color: #333;
- }
  
- a:hover,
- a:active{
-   text-decoration: none;
- }
