@@ -85,10 +85,17 @@
                 <div class="sentence">
                     様々なコンテンツを募集しています。
                 </div>
-                <div class="about"><div class="allow">About</div></div>
             </div>
-            <div class="animation">LIFE</div>
-            <div class="slide-show">
+                <div class="about"><div class="allow">About</div></div>
+            <div class="animation">
+                    <img src="images/l-star.png" alt="">
+                    <img src="images/i-star.png" alt="">
+                    <img src="images/f-star.png" alt="">
+                    <img src="images/e-star.png" alt="">
+                    <img src="images/s-star.png" alt="">
+                    <img src="images/lifes.png" alt="">
+            </div>
+            
                 <div class="more"><div class="allow"></div>  全ての特集を見る</div>
             </div>
             <div class="eventInfo">
@@ -96,6 +103,7 @@
             <div class="tokyo"><img src="" alt="">  TOKYO</div>
             <div class="yokohama"><img src="" alt=""> YOKOHAMA</div>
             <div class="osaka"><img src="" alt=""> OSAKA</div>
+            </div>
             <div class="youtubeInfo">
                 <h1>BEAUTIFUL <br>LIFE</h1>
                     <div class="playAnimation"><img src=""> </div>
@@ -134,43 +142,47 @@
             <h1>SERIES <br>LINEUP</h1>
             <p>ファッションやスポーツウェア、インテリア、キッチン雑貨や家具など...ライフスタイルに身近なアイテムをjoie infinie.から展開しています。</p>
             <div class="lineUP-contents">
+                <img src="images/new-collect.png" alt="">
+                <p class="seriesName"></p>
+                    <div class="outline">機能的で快適な着心地。</div>
+                    <div class="moreInfo"></div>
+            <div class="lineUP-contents">
+                <img src="images/table-wear.png" alt="">
+                <p class="seriesName"></p>
+                    <div class="outline">普段の料理から、パーティーなどの会食にも合わせられる豊富なデザイン。</div>
+                    <div class="moreInfo"></div>
+            </div>
+            <div class="lineUP-contents">
                 <img src="" alt="">
-                <p class="seriesName"></div>
+                <p class="seriesName"></p>
                     <div class="outline"></div>
                     <div class="moreInfo"></div>
             </div>
             <div class="lineUP-contents">
                 <img src="" alt="">
-                <p class="seriesName"></div>
+                <p class="seriesName"></p>
                     <div class="outline"></div>
                     <div class="moreInfo"></div>
             </div>
             <div class="lineUP-contents">
                 <img src="" alt="">
-                <p class="seriesName"></div>
+                <p class="seriesName"></p>
                     <div class="outline"></div>
                     <div class="moreInfo"></div>
             </div>
-            <div class="lineUP-contents">
-                <img src="" alt="">
-                <p class="seriesName"></div>
-                    <div class="outline"></div>
-                    <div class="moreInfo"></div>
-            </div>
-            <div class="lineUP-contents">
-                <img src="" alt="">
-                <p class="seriesName"></div>
-                    <div class="outline"></div>
-                    <div class="moreInfo"></div>
             </div>
             <div class="global-store">
-                <div class="tokyo"><img src="" alt="">MALTA</div>
-            <div class="yokohama"><img src="" alt="">PARIS</div>
-            <div class="osaka"><img src="" alt="">CANADA</div>
+                <h1>GROBAL <br>STORE</h1>
+                <div class="malta"><img src="images/malta.png" alt="">
+                    <div class="place"><img src="images/pin.png" alt="">MALTA</div></div>
+                <div class="paris"><img src="images/paris.png" alt="">
+                    <div class="place"><img src="images/pin.png" alt=""> FRANCE</div></div>
+                <div class="canada"><img src="images/canada.png" alt="">
+                    <div class="place"><img src="images/pin.png" alt="">CANADA</div></div>
+                    <div class="more"><div class="allow"></div>海外の店舗一覧</div>
             </div>
-            <div class="more"><div class="allow"></div>日本の店舗一覧</div>
+           
         </div>
-
 
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -178,15 +190,15 @@
     <script>
              $('.slider').slick({
         autoplay: true,
-        autoplaySpeed: 4000,//次のスライドに切り替わる待ち時間
-        speed:2000,//スライドの動きのスピード。初期値は300。
+        autoplaySpeed: 4000,
+        speed:2000,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,//左右の矢印あり
         dots: true,
         pauseOnFocus: false,//フォーカスで一時停止を無効
-        pauseOnHover: false,//マウスホバーで一時停止を無効
+        pauseOnHover: false,
         pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
     });
 
