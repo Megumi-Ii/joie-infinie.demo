@@ -9,10 +9,19 @@ body{
   max-width: 100%;
 }
 .header {
-  height: 165px;
+  height: 160px;
+}
+.header p {
+  font-size: 2rem;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+.header h1 {
+  margin: 0 auto 10px auto;
+  text-align: center;
 }
 nav {
-    display: none;
+  display: none;
 }
 .wrapper {
     max-width: 100%;
@@ -25,17 +34,16 @@ nav {
 }
 .slider img{
     width: 100%;
-    height: 66vh;
+    height: 500px;
     background-repeat: no-repeat;
-    background-position: center;
-   
+    object-fit: cover;
+  
 }
-
 .slick-dots {
   position: relative;
   z-index: 3;
   text-align:center;
-  margin: 50px 0 0 0;
+  margin: 20px auto;
 }
 .slick-dots li {
     display:inline-block;
@@ -49,43 +57,32 @@ nav {
     border-radius:50%;
     background-color: rgb(173, 172, 172);
 }
-
 .slick-dots .slick-active button{
     background:#333;
 }
-
-ul{
-  margin:0;
-  padding: 0;
-  list-style: none;
-}
-a:hover,
-a:active{
-  text-decoration: none;
+.items {
+  width: 92%;
+  border-radius: 0 1% 1% 0;
+  background-color:rgb(217, 217, 217);
+  height: 1000px;
 }
 
 .wrapper{
   position: relative;
 }
-
-.slide-apparel {
-    width:94%;
+.slide-fashion {
+    width:92%;
     margin:0 auto;
     overflow: hidden;
  }
- 
- .slide-apparel img {
-     width:400px;
-     height: 400px;
-     height:auto;
+ .slide-fashion img {
+     width: 216px;
+     height: 216px;
      border-radius: 2%;
  }
- 
- .slide-apparel .slick-slide {
+ .slide-fashion .slick-slide {
      margin:0 10px;
  }
- 
- 
  .slick-prev, 
  .slick-next {
      position: absolute;/*絶対配置にする*/
@@ -107,56 +104,46 @@ a:active{
      right: -1.5%;
      transform: rotate(45deg);
  }
- h2,p {
-     text-align:center;
-     padding:20px;
- }
-
- a{
-   color: #333;
- }
  
- a:hover,
- a:active{
-   text-decoration: none;
- }
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  margin: 5%;
 }
  .introduce {
-   margin: 10% 5%;
+   margin: 10% 0%;
  }
  .animation {
   position: relative;
   width: 45%;
   max-width: 100%;
-  
+  margin: auto;
 }
 .animation img {
   position: absolute;
   width: 100%;
   opacity: 0;
-  animation: change-img-anim 10s infinite;
+  animation: change-img-anim 7s infinite;
   padding: 10%;
   margin: 0 auto;
 }
 .animation img:nth-of-type(1) {
+  animation: change-img-anim-first 7s infinite;
   animation-delay: 1s;
 }
 .animation img:nth-of-type(2) {
   animation-delay: 2s;
 }
 .animation img:nth-of-type(3) {
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 .animation img:nth-of-type(4) {
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 .animation img:nth-of-type(5) {
-  animation-delay: 8s;
+  animation-delay: 5s;
 }
 .animation img:nth-of-type(6) {
-  animation-delay: 10s;
+  animation-delay: 6s;
 }
 
 @keyframes change-img-anim-first {
@@ -167,26 +154,45 @@ h1 {
   100%{ opacity: 0;}
 }
 @keyframes change-img-anim {
-  0%{ opacity: 0;}
+  0%{ opacity: 1;}
   30%{ opacity: 1;}
   36%{ opacity: 1;}
   45%{ opacity: 0;}
   100%{ opacity: 0;}
 }
+.more {
+  margin: 50% auto;
+  text-align: center;
+  width: 86%;
+  background: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 9999px;
+}
+.eventInfo {
+  width: 100%;
+  height: 1000px;
+  background:rgb(217, 217, 217);
+}
 .eventInfo h1{
-  padding: 10% 5%;
+  padding: 10% 0%;
   margin-top: 30%;
 }
-
-
+.youtubeInfo {
+  width: 90%;
+  background:rgb(217, 217, 217);
+  margin: auto;
+}
  .lineUP {
+   height: auto;
    width: 100%;
  }
  .lineUP img {
-   max-width: 500px;
+  width: 100%;
  }
  .global-store {
-   background-color:rgb(219, 217, 217);
+   background-color:rgb(217, 217, 217);
  }
  
  .global-store img {

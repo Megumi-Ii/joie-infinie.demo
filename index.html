@@ -13,11 +13,10 @@
         <h1>joie infinie.</h1>
       </div>
       <div class="drop_down">
-          
            <nav>
                <ul>
                  <p>meet suit</p>
-             <h1>joie infinie.</h1>
+                 <div class="title">joie infinie.</div>
                  <li><a href="#">TOP</a><p>トップ</p></li>
                  <li><img src="" alt=""><a href="#">joie infinie...Loves</a></li>
                  <li><a href="#">News</a><p>ニュース</p>
@@ -44,10 +43,10 @@
             <div class="sub-title">
                 joie infinie.の<br>注目ファッションアイテムをセレクト
             </div>
-            <div class="apparel">
+            <div class="fashion">
                 <h2>APPAREL</h2>
             </div>
-            <div class="slide-apparel">
+            <div class="slide-fashion">
                     <img src="images/camp.png">
                     <img src="images/cest-la-vie.png">
                     <img src="images/movie.png">
@@ -95,8 +94,7 @@
                     <img src="images/s-star.png" alt="">
                     <img src="images/lifes.png" alt="">
             </div>
-            
-                <div class="more"><div class="allow"></div>  全ての特集を見る</div>
+                <div class="more"><div class="allow"></div>全ての特集を見る</div>
             </div>
             <div class="eventInfo">
             <h1>STORE <br>EVENT</h1>
@@ -181,41 +179,36 @@
                     <div class="place"><img src="images/pin.png" alt="">CANADA</div></div>
                     <div class="more"><div class="allow"></div>海外の店舗一覧</div>
             </div>
-           
         </div>
-
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
     <script>
-             $('.slider').slick({
+        $('.slider').slick({
         autoplay: true,
         autoplaySpeed: 4000,
         speed:2000,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,//左右の矢印あり
         dots: true,
-        pauseOnFocus: false,//フォーカスで一時停止を無効
+        pauseOnFocus: false,
         pauseOnHover: false,
-        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+        pauseOnDotsHover: false,
     });
-
 //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
 $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
     $('.slider').slick('slickPlay');
 });
 </script>
 <script>
-    $('.slide-apparel').slick({
+    $('.slide-fashion').slick({
     autoplay: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplaySpeed: 2000,
     speed:1000,
-    dots: true,
     responsive: [
       {
       breakpoint: 769,
