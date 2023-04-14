@@ -4,26 +4,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'M PLUS 1p', sans-serif;
-   
 }
 body{
   max-width: 100%;
 }
 .header {
-  height: 21.8vh;
+  height: 18vh;
+  max-width: 100%;
+  position: relative;
+  margin-top: 43px;
+}
+.shapeTriangle_red {
+  transform: rotate(60deg);
+	border-bottom: 38px solid #b6195d; 
+	border-right: 65px solid transparent; 
+	border-left: 65px solid transparent; 
+  position: absolute;
+  top: -20px;
+  left: -50px;
 }
 .header p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   margin: -15px auto 0 auto;
   text-align: center;
+  letter-spacing: 3px;
 }
 .header h1 {
   margin: 0 auto 30px auto;
   text-align: center;
 }
 nav {
-  display: none;
+    width: 100%;
+    display: none;
 }
 .wrapper {
     max-width: 100%;
@@ -31,20 +44,19 @@ nav {
 .slider {
   position:relative;
   z-index: 1;
-  height: 100vh;
+
   overflow: hidden;
 }
 .slider img{
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-repeat: no-repeat;
-    object-fit: cover;
 }
 .slick-dots {
   position: relative;
   z-index: 3;
   text-align:center;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 }
 .slick-dots li {
     display:inline-block;
@@ -56,7 +68,7 @@ nav {
     height:12px;
     display:block;
     border-radius:50%;
-    background-color: rgb(173, 172, 172);
+    background: rgb(173, 172, 172);
 }
 .slick-dots .slick-active button{
     background:#333;
@@ -64,48 +76,32 @@ nav {
 .items {
   width: 92%;
   border-radius: 0 1% 1% 0;
-  background-color:rgb(217, 217, 217);
+  background:rgb(217, 217, 217);
   height: 1000px;
-  
-}
-
-.wrapper{
+  margin-top: 0;
   position: relative;
 }
+.tinyTriangle_red{
+  transform:rotate(-130deg);
+	border-bottom: 70px solid #cc0000;
+	border-right: 18px solid transparent;
+	border-left: 18px solid transparent;
+  position: absolute;
+  right: 20px;
+  z-index: -1;
+}
+
 .slide-fashion {
     width:100%;
-    margin:0 auto;
     overflow: hidden;
     object-fit: cover;
+    margin:0 10px;
  }
  .slide-fashion img {
      width: 300px;
      height: 300px;
      border-radius: 2%;
- }
- .slide-fashion .slick-slide {
-     margin:0 10px;
- }
- .slick-prev, 
- .slick-next {
-     position: absolute;/*絶対配置にする*/
-     top: 42%;
-     cursor: pointer;/*マウスカーソルを指マークに*/
-     outline: none;/*クリックをしたら出てくる枠線を消す*/
-     border-top: 2px solid #666;/*矢印の色*/
-     border-right: 2px solid #666;/*矢印の色*/
-     height: 15px;
-     width: 15px;
- }
- 
- .slick-prev {/*戻る矢印の位置と形状*/
-     left: -1.5%;
-     transform: rotate(-135deg);
- }
- 
- .slick-next {/*次へ矢印の位置と形状*/
-     right: -1.5%;
-     transform: rotate(45deg);
+     margin: 5px;
  }
  
 h1 {
@@ -114,12 +110,31 @@ h1 {
   font-weight: 200;
   line-height: 75px;
 }
+.sentence {
+  width: 90%;
+  margin: auto;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 32px;
+  z-index: 2;
+  font-size: 1.1rem;
+}
+.blurTriangle_brown {
+  width: 5%;
+  transform: rotate(-20deg);
+	border-bottom: 60px solid #660000;
+	border-right: 60px solid transparent;
+	border-left: 60px solid transparent;
+  border-radius: 30px;
+  filter: blur(.4rem);
+  opacity: .5;
+}
+
  .introduce {
    margin: 10% 0%;
  }
  .animation {
   position: relative;
-  width: 45%;
+  width: 50%;
   max-width: 100%;
   margin: auto;
 }
@@ -127,8 +142,7 @@ h1 {
   position: absolute;
   width: 100%;
   opacity: 0;
-  animation: change-img-anim 7s infinite;
-  padding: 10%;
+  animation: change-img-anim 8s infinite;
   margin: 0 auto;
 }
 .animation img:nth-of-type(1) {
@@ -150,7 +164,6 @@ h1 {
 .animation img:nth-of-type(6) {
   animation-delay: 6s;
 }
-
 @keyframes change-img-anim-first {
   0%{ opacity: 1;}
   30%{ opacity: 1;}
@@ -175,7 +188,6 @@ h1 {
   padding: 10px;
   border-radius: 9999px;
 }
-
 .eventInfo {
   width: 100%;
   height: 100%;
@@ -197,7 +209,7 @@ h1 {
 .eventContents p {
   width: 80%;
   margin: 8%;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-family: sans-serif;
   letter-spacing: 3px;
   line-height: 30px;
@@ -251,15 +263,7 @@ h1 {
    text-align: center;
    margin: auto;
  }
- .shapeTriangle_red {
-  margin-left: -4%;
-  top: 8%;
-  width: 5%;
-  transform: rotate(60deg);
-	border-bottom: 35px solid #f3163b; 
-	border-right: 60px solid transparent; 
-	border-left: 60px solid transparent; 
-}
+ 
  .blurTriangle_blue {
   width: 5%;
   transform: rotate(-70deg);
@@ -277,13 +281,5 @@ h1 {
 	border-left: 100px solid transparent;
   filter: blur(.3rem);
   opacity: .5;
-}
-.tinyTriangle_red{
-  width: 1%;
-  transform:rotate(-130deg);
-	border-bottom: 80px solid rgba(252, 6, 6, 0.863);
-	border-right: 20px solid transparent;
-	border-left: 20px solid transparent;
-  float: right;
 }
 
