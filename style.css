@@ -9,6 +9,10 @@ body{
   max-width: 100%;
   width: 100%;
 }
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 .header {
   height: 18vh;
   max-width: 100%;
@@ -276,13 +280,32 @@ h1 {
   font-size: 3.4rem;
 }
 .youtubeInfo {
-  width: 90%;
   background:rgb(217, 217, 217);
-  margin: auto;
+  margin: auto 5%;
+  border-radius: 5px;
+}
+.slide-youtube {
+  width:100%;
+  margin:0 auto;
+  background: no-repeat;
+}
+.slide-youtube img {
+  width: 75vw;
+  height:auto;
+  border-radius: 5px;
+  margin: 10px;
+}
+.slide-youtube .slick-slide {
+transition: all .5s;
+opacity: 0.5;
+}
+.slide-youtube .slick-slide.slick-center{
+transform: scale(1);
+opacity: 1;
 }
 .news {
   margin: auto ;
-  margin-top: -240px;
+  margin-top: -40%;
 }
 .news p,.ch p {
   margin-left: 40px;
@@ -312,8 +335,8 @@ h1 {
   width: 50px;
   border-radius: 9999px;
   position: absolute;
-  left: 180px;
-  margin-top: 25px;
+  left: 35%;
+  margin-top: 3%;
 }
 .news .more {
   margin-top: 30px;
@@ -332,22 +355,32 @@ h1 {
   padding: auto;
 }
 .ch {
-  width: 80%;
+  width: 94%;
+  height: 800px;
   background:rgb(217, 217, 217);
   border-radius: 2%;
-  margin-top: -210px;
+  margin-top: -30%;
+  margin-left: 15%;
+  position: relative;
 }
 .ch h1 {
-  font-size: 3rem;
+  font-size: 3.3rem;
   margin-bottom: 5px;
+  position: absolute;
+  left: -70px;
 }
 .ch p {
   margin-bottom: 0;
+  position: absolute;
+  top: 13%;
+  left: -18%;
 }
 .ch img {
-  width: 86%;
-  margin: 7%;
+  width: 90%;
+  left: -8%;
+  top: 20%;
   border-radius: 2%;
+  position: absolute;
 }
  .lineUP {
    max-width: 100%;
@@ -359,7 +392,8 @@ h1 {
  }
  .lineUP img {
   width: 100%;
-  height: 240px;
+  height: 280px;
+  object-fit: cover;
  }
  .lineUP p,.lineUP .outline {
    font-family: Arial, Helvetica, sans-serif;

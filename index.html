@@ -40,6 +40,7 @@
                 <img src="images/cat.png" >
             </ul>
           </div>
+          <div class="wrapper">
           <div class="tinyTriangle_red"></div>
           <div class="items">
             <h1>PICKUP <br>ITEMS </h1>
@@ -84,7 +85,8 @@
                 </div>
             </div>
             <div class="introduce">
-                
+            </div>
+            <div class="wrapper">
             <h1>joie infinie.<br>Loves </h1>
             <div class="tinyTriangle_red"></div>
                 <div class="sentence">
@@ -92,7 +94,7 @@
                     幅広く様々なコンテンツを展開しています。
                     是非、お気に入りの物を見つけてみて下さい。
                 </div>
-            </div>
+           
             <div class="abouInfo"><div class="arrow_bl"></div><div class="about"><p>about</p></div></div>
                 <div class="anime_block">
             <div class="animation">
@@ -146,18 +148,23 @@
                     </div>
                   </div>
                 </div>
-                    <div class="playAnimation"><img src="images/youtube.jpeg"> </div>
+                    <div class="playAnimation"></div>
                     <div class="sentence">
                         joie infinie.ではライフスタイルやファッションについて、定期的にYoutubeで発信しています。
                     </div>
                     <div class="slide-youtube">
+                        <img src="images/you_s.jpeg"> 
+                        <img src="images/you_f.jpeg"> 
+                        <img src="images/you_l.jpeg"> 
+                    </div>
                         <div class="allowAnimation">
                             BEAUTIFUL LIFE 01
                         </div>
                         <div class="infoAnimation"></div>
                         <div class="more"><div class="arrow"></div>  一覧を見る</div>
-                    </div>
             </div>
+            </div>
+            <div class="wrapper">
             <div class="blurTriangle_green"></div>
         <div class="news">
             <div class="tinyTriangle_red"></div>
@@ -181,7 +188,7 @@
             <div class="more"><div class="arrow"></div>  一覧を見る</div>
         </div>
         <div class="ch">
-            <h1>ジョワインフィニCh</h1>
+            <h1>ジョワCh</h1>
             <p>インテリアについてのチャンネル。</p>
             <img src="images/home-deco.png" alt="">
         </div>
@@ -233,7 +240,7 @@
             </div>  
             </div>
            
-        
+            </div>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
@@ -276,6 +283,17 @@
     }
   ]
   });
+</script>
+<script>
+    $('.slide-youtube').slick({
+  infinite: true,
+  speed: 1500,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay: true
+});
+        
 </script>
 <script>
     const before = $('.text');
