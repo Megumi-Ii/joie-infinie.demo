@@ -52,29 +52,28 @@
             </div>
             <div class="double-slider">
                 <div class="slide-fashion">
-                    <img src="images/color.jpeg">
+                    <img src="images/cest-la-vie.png">
                     <img src="images/work-joy.png">
-                    <img src="images/movie.png">
+                    <img src="images/meetSuit.jpeg">
                     <img src="images/cat.png">
                 </div>
                 <div class="txt-slider">
                     <p class="txt">
-                        <a></a>
-                        一つ目のスライドのテキストが入ります
+                        <a>CLOTHES</a><br>
+                        自分に合ったカラーに出会える。
                     </p>
                     <p class="txt">
-                        <a></a>
-                        二つ目のスライドのテキストが入ります
+                        <a>CLOTHES</a><br>
+                        自分に合ったカラーに出会える。
                         
                     </p>
                     <p class="txt">
-                        <a></a>
-                        三つ目のスライドのテキストが入ります
-                       
+                        <a>CLOTHES</a><br>
+                        自分に合ったカラーに出会える。
                     </p>
                     <p class="txt">
-                        <a></a>
-                        三つ目のスライドのテキストが入ります
+                        <a>CLOTHES</a><br>
+                        自分に合ったカラーに出会える。
                     </p>
                 </div>
             </div>
@@ -103,12 +102,7 @@
                     <img src="images/lifes.png" alt="">
             </div>
             <div class="blurTriangle_brown"></div>
-            <div class="slide-fashion">
-                <img src="images/color.jpeg">
-                <img src="images/work-joy.png">
-                <img src="images/movie.png">
-                <img src="images/cat.png">
-            </div>
+            
                 <div class="more"> <div class="arrow"></div>全ての特集を見る</div>
             </div>
             </div>
@@ -125,8 +119,7 @@
             <div class="city"><img src="images/pin.png" alt=""> YOKOHAMA</div>
             <div class="eventContents">
             <div class="event-p"><img src="images/grace.jpeg" alt=""> </div>
-            <div class="event-o"><p>joie infinie.から新しい、スキンケアブランド”GRACE”が登場。横浜で先行販売します。</p>
-            </div>
+            <div class="event-o"><p>joie infinie.から新しい、スキンケアブランド”GRACE”が登場。横浜で先行販売します。</p></div>
             </div>
             <div class="city"><img src="images/pin.png" alt=""> GUNMA/NAGANO</div>
             <div class="eventContents">
@@ -216,7 +209,6 @@
                     <div class="outline">ペットとの生活をテーマにペットに合った素材の洋服やインテリアをラインナップしています。</div>
                     <div class="moreInfo"><div class="arrow_bl"></div><p>もっと見る</p></div>
             </div>
-            
             </div>
             <div class="blurTriangle_red"></div>
             <div class="global-store">
@@ -262,25 +254,12 @@
 <script>
     $(".slide-fashion").slick({
     asNavFor:".txt-slider", 
-    autoplay: true,
+    dots: true,
     infinite: true,
+    slidesToShow: 1.1,
+    slidesToScroll: 1,
     autoplaySpeed: 2000,
-    speed:1000,
     responsive: [
-      {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      }
-    },
-    {
-      breakpoint: 526,
-      settings: {
-        slidesToShow: 1.5,
-        slidesToScroll: 1.5,
-      }
-    }
   ]
   });
   $(".txt-slider").slick({
@@ -297,8 +276,8 @@
     {
       breakpoint: 526,
       settings: {
-        slidesToShow: 1.5,
-        slidesToScroll: 1.5,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       }
     }
   ]
