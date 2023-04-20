@@ -41,6 +41,7 @@ nav {
 }
 .wrapper {
     max-width: 100%;
+    width:100%;
 }
 .slider {
   position:relative;
@@ -520,9 +521,6 @@ h1 {
   animation: 3s  blurTriangle_blue infinite,3s  blurTriangle_brown infinite,3s blurTriangle_red infinite;
 }
 
-body {
-  font-size: 10px;
-}
 .plays {
   display: flex;
   margin-top: 80px;
