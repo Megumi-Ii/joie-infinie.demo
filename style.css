@@ -241,10 +241,13 @@ h1 {
   position: absolute;
   left: -68px;
 }
+.eventInfo h1{
+  font-size: 3.4rem;
+}
 .eventContents p {
   width: 75%;
   margin: 8%;
-  font-size: 17px;
+  font-size: 1rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 3px;
   line-height: 30px;
@@ -259,7 +262,7 @@ h1 {
   margin-left: 20px;
 }
 .city {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   text-align: center;
   z-index: 3;
@@ -268,15 +271,14 @@ h1 {
 .city img {
   width: 20px;
 }
-.eventInfo h1{
-  font-size: 3.4rem;
-}
+
 .youtubeInfo {
   background:rgb(217, 217, 217);
-  margin: auto 5%;
+  margin: 0 auto;
 }
 .youtubeInfo img {
-  padding: 10px;
+  margin: 0 auto;
+  padding: auto 10px;
 }
 .slide-youtube {
   width:100%;
@@ -284,9 +286,9 @@ h1 {
   background: no-repeat;
 }
 .slide-youtube img {
-  width: 50%;
-  height: 50%;
- 
+  width: 30%;
+  height: 380px;
+  padding: auto 5%;
 }
 .slide-youtube .slick-slide {
 transition: all .5s;
@@ -481,7 +483,7 @@ opacity: 1;
    border-radius: 5%;
  }
  .place p {
-   margin-left: 40px;
+   margin-left: 45px;
    font-size: 0.7rem;
    letter-spacing: 1px;
  }
@@ -572,7 +574,6 @@ body {
   border-radius: 50%;
   animation: rotateAnim 10s linear infinite;
 }
-
 .inner:hover {
   animation-play-state: paused;
 }
@@ -582,14 +583,11 @@ body {
   50%{ transform: rotate(180deg); }
   100% { transform: rotate(360deg); }
 }
-
 span {
   position: absolute;
   inset: 0;
   font-weight: 100;
 }
-
-
 .slick-arrow{ z-index: 2; }
               .double-slider{
                 width: 100%;
