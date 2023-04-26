@@ -661,12 +661,27 @@ footer {
   font-size: 0.9rem;
   
 }
-.web_link_dot, .web_link_zo {
+.link_camera , .link_town {
   width: 80%;
   background: white;
   margin: 24px auto;
-  padding: 2.9%;
+  padding: 1%;
   border-radius: 5px;
+  height: 60px;
+}
+.link_camera a, .link_town a {
+  text-decoration: none;
+  color: black;
+  margin-top: -3%;
+}
+.link_camera img , .link_town img {
+  width: 40px;
+}
+.link_camera img {
+  border-radius: 50%;
+}
+.link_town img {
+  border-radius: 15%;
 }
 .sub_name, .sns_icon p{
   font-size: 1rem;
@@ -690,7 +705,7 @@ footer {
 .sns_icon {
   margin: 0px auto;
 }
-.sns_icon img,.web_store img {
+.sns_icon img {
   width: 27px;
   mix-blend-mode: multiply;
   margin: auto 10px;
@@ -705,5 +720,45 @@ footer {
   margin: auto;
   opacity: .4;
 }
+.right_arow {
+  color: #333;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0.3em;
+  border-left-color: currentColor;
+  border-right: 0;
+  margin: -22px auto;
+  margin-right: 10px;
+}
               
               
+.swiper{
+  width:70%;
+  overflow: hidden;
+  margin: 10px;
+  justify-content: space-between;
+}
+.swiper img{
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.swiper_text{
+
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.swiper_text .swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.card02 {
+  overflow: hidden; 
+}
+.swiper {
+    overflow: visible; 
+  }

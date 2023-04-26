@@ -233,6 +233,70 @@
                     <div class="moreInfo"><div class="arrow_bl"></div><p>もっと見る</p></div>
                 </div>
             </div>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<div class="swiper swiper_main">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/cest-la-vie.jpeg"></div>
+        <div class="swiper-slide"><img src="./images/cat.jpeg"></div>
+        <div class="swiper-slide"><img src="./images/work-joy.jpeg"></div>
+        <div class="swiper-slide"><img src="./images/meetSuit.jpeg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="swiper swiper_text">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <p class="txt">
+                スライド1のテキストが入ります<br>
+               
+            </p>
+        </div>
+        <div class="swiper-slide">
+            <p class="txt">
+                スライド2のテキストが入ります<br>
+                
+            </p>
+        </div>
+        <div class="swiper-slide">
+            <p class="txt">
+                スライド3のテキストが入ります<br>
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const swiper_text = new Swiper(".swiper_text", {
+        loop: true, 
+        slidesPerView: 1.5,
+        allowTouchMove: false,
+    })
+    const swiper_main = new Swiper('.swiper_main', {
+        loop: true, 
+        slidesPerView: 1.5,                        
+        autoplay: {                         
+            delay: 5000,  
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },                  
+        navigation: {                       
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {                           
+            swiper: swiper_text,            
+        },                                  
+    })
+</script>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
