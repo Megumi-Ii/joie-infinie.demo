@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'M PLUS 1p', sans-serif;
+    letter-spacing: 1.5px;
 }
 body{
   max-width: 100%;
@@ -127,13 +128,14 @@ h1 {
   width: 40%;
   max-width: 100%;
   margin: auto;
+  padding-bottom: 50%;
 }
 .animation img {
   position: absolute;
   width: 100%;
   opacity: 0;
   animation: change-img-anim 8s infinite;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .blurTriangle_brown {
   width: 5%;
@@ -385,12 +387,13 @@ opacity: 1;
   left: -18%;
 }
 .ch img {
-  width: 90%;
+  width: 100%;
   min-height: 218px;
   left: -8%;
   top: 135px;
   border-radius: 2%;
   position: absolute;
+  z-index: 2;
 }
 .ch .more {
   position: absolute;
@@ -416,7 +419,7 @@ opacity: 1;
    width: 80%;
    margin: 10px auto;
    font-size: 1rem;
-   line-height: 33px;
+   line-height: 35px;
    letter-spacing: 5px;
  }
 .seriesName {
@@ -639,7 +642,7 @@ footer {
   background:rgb(217, 217, 217);  
 }
 .web_store  {
-  margin-top: -8%;
+  margin-top: 3%;
 }
 .web_store p {
   font-size: 0.9rem;
@@ -652,17 +655,20 @@ footer {
   padding: 1%;
   border-radius: 5px;
   height: 60px;
+    vertical-align: middle;
 }
 .link_camera a, .link_town a {
   text-decoration: none;
   color: black;
-  margin-top: -3%;
+  margin: 0 auto 5% 2%;
 }
 .link_camera img , .link_town img {
-  width: 40px;
+  width: 35px;
 }
 .link_camera img {
   border-radius: 50%;
+
+
 }
 .link_town img {
   border-radius: 15%;
@@ -717,32 +723,41 @@ footer {
   margin-right: 10px;
 }
               
-              
-.swiper{
-  width:70%;
-  overflow: hidden;
-  margin: 10px;
-  justify-content: space-between;
-}
-.swiper img{
-  width: 100%;
-  border-radius: 10px;
-  justify-content: space-around;
-}
-.swiper_text{
+    .slick-arrow {
+      color: black;
+    }
+    #int-slider {
+      width: 105%;
+      display: flex;
+   
+    }
+    #int-slider img {
+      width: 220px;
+      height: 220px;
+      border-radius: 5px;
+      padding-left: 20px;
+    }
+    .info_text  {
+      margin-left: 20px;
+      width: 100%;
+    }
+    .info_text  img {
+      width: 20px;
+    }
+    .slick-prev {
 
-  padding: 30px 0;
-  display: flex;
-  justify-content: center;
-}
-.swiper_text .swiper-slide{
-  display: flex;
-  justify-content: center;
-}
-
-.card02 {
-  overflow: hidden; 
-}
-.swiper {
-    overflow: visible; 
-  }
+      color: black;
+    }
+    .prevArrow {
+      color: black;
+    }
+    h4 {
+      font-size: .8rem;
+      color: red;
+    }
+    .info_text p {
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+      
+    }

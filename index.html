@@ -47,41 +47,29 @@
                 joie infinie.の<br>トレンドアイテムをセレクト
             </div>
                 <h2>APPAREL</h2>
-              </div>
-              <div class="swiper swiper_main">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./images/cest-la-vie.jpeg"></div>
-                    <div class="swiper-slide"><img src="./images/cat.jpeg"></div>
-                    <div class="swiper-slide"><img src="./images/work-joy.jpeg"></div>
-                    <div class="swiper-slide"><img src="./images/meetSuit.jpeg"></div>
+                <div id="sub-slider">
+                <div id="int-slider">
+                <img src="images/meetSuit.jpeg" >
+                <img src="images/new_item.jpeg" >
+                <img src="images/work-joy.jpeg" >
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            
-            <div class="swiper swiper_text">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p class="txt">
-                            スライド1のテキストが入ります<br>
-                           
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <p class="txt">
-                            スライド2のテキストが入ります<br>
-                            
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <p class="txt">
-                            スライド3のテキストが入ります<br>
-                            
-                        </p>
-                    </div>
+                <div id="info-slider">
+                <div class="info_text">
+                 
+                    <h4>❤️　ITEMS</h4>
+                    <p>この時季『新しい自分』にであう。</p>
+                </div>
+                <div class="info_text">
+                    
+                    <h4>❤️　ITEMS</h4>
+                    <p>着心地もデザインもこだわり抜いたアウター。</p>
+                </div>
+                <div class="info_text">
+                    <h4>❤️　ITEMS</h4>
+                    <p>プライベートも仕事も自分を上げるファッション。</p>
                 </div>
             </div>
+                </div>
                 <div class="shapeTriangle_blue"></div>
                 </div>
             </div>
@@ -105,6 +93,7 @@
                     <img src="images/lifes.png" alt="">
             </div>
             <div class="blurTriangle_brown"></div>
+            
                 <div class="more"> <div class="arrow"></div>全ての特集を見る</div>
             </div>
             </div>
@@ -234,6 +223,7 @@
             </div>
             </div>
             <div class="for_business">
+                <div class="blurTriangle_green"></div>
                 <div class="lineUP-contents">
                 <img src="images/business.jpeg" alt="">
                 <p class="seriesName">for BUSINESS</p>
@@ -241,35 +231,24 @@
                     <div class="moreInfo"><div class="arrow_bl"></div><p>もっと見る</p></div>
                 </div>
             </div>
+            
+                
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+    
+   
+      
+
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
 
-<script>
-    const swiper_text = new Swiper(".swiper_text", {
-        loop: true, 
-        slidesPerView: 1.5,
-        allowTouchMove: false,
-    })
-    const swiper_main = new Swiper('.swiper_main', {
-        loop: true, 
-        slidesPerView: 1.5,                        
-        autoplay: {                         
-            delay: 5000,  
-        },
-        pagination: {
-            el: '.swiper-pagination',
-        },                  
-        navigation: {                       
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {                           
-            swiper: swiper_text,            
-        },                                  
-    })
-</script>
+
             <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
@@ -292,38 +271,7 @@
         pauseOnDotsHover: false,
     });
 </script>
-<script>
-    $(".slide_fashion").slick({
-    asNavFor:".text_slider", 
-    dots: true,
-    infinite: true,
-    slidesToShow: 1.1,
-    slidesToScroll: 1,
-    autoplaySpeed: 2000,
-    responsive: [
-  ]
-  });
-  $(".text_slider").slick({
-    draggable:false,         
-    arrows:false 
-     [
-      {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      }
-    },
-    {
-      breakpoint: 526,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-      }
-    }
-  ]
-  });           
-</script>
+
 <script>
     $('.slide_youtube').slick({
   infinite: true,
@@ -359,10 +307,29 @@ $('span').each(function(index) {
 });
 
 </script>
+<script>
+  
+    
+   $("#int-slider").slick({
+   prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+   nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+   asNavFor:"#info-slider",
+   autoplay:true,
+   slidesToShow: 2,
+   speed:3000,
+})
+$("#info-slider").slick({
+   draggable:false,         
+   arrows:false ,  
+   slidesToShow: 2, 
+   speed:3000,    
+})
+</script>
+
     </body>
       <footer>
           <div class="footer_block">
-        <div class="blurTriangle_green"></div>
+      
         <div class="blurTriangle_blue"></div>
           <div class="web_store">
               <p>joie infinie.のweb store</p>
