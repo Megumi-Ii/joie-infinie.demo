@@ -61,7 +61,6 @@ nav {
   position: relative;
   z-index: 3;
   text-align:center;
-
 }
 .slick-dots li {
     display:inline-block;
@@ -179,6 +178,16 @@ h1 {
   45%{ opacity: 0;}
   100%{ opacity: 0;}
 }
+.more {
+  margin: 50% auto;
+  text-align: center;
+  width: 86%;
+  background: black;
+  color: white;
+  font-size: 0.7rem;
+  padding: 12px;
+  border-radius: 9999px;
+}
 .arrow {
   position: relative;
   margin-left: 10px; 
@@ -207,15 +216,33 @@ h1 {
   height: 1px;
   background: white;
 }
-.more {
-  margin: 50% auto;
-  text-align: center;
-  width: 86%;
-  background: black;
-  color: white;
-  font-size: 0.7rem;
-  padding: 12px;
-  border-radius: 9999px;
+.arrow_bl {
+  position: relative;
+  margin-left: 10px; 
+}
+.arrow_bl::before {
+  content: " ";
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 18px; 
+  width: 3px;
+  height: 3px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  transform: rotate(45deg);
+}
+.arrow_bl::after {
+  content: " ";
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 1px;
+  width: 20px; 
+  height: 1px;
+  background: white;
 }
 .lineUP-contents .moreInfo p {
  font-size: 0.7rem;
@@ -313,10 +340,23 @@ opacity: 0.5;
 transform: scale(1);
 opacity: 1;
 }
+#arrowAnim {
+  margin-top: 7px;
+  width: 20px;
+}
+.arrowAnimation {
+  display: flex;
+  margin-bottom: 5px;
+}
+h2 {
+  margin-left: 20%;
+  font-size: 0.7rem;
+}
 .news {
   margin: auto ;
   padding-top: -150px;
 }
+
 .news p,.ch p {
   margin-left: 40px;
   font-size: 1.1rem;
@@ -367,7 +407,7 @@ opacity: 1;
 .ch {
   width: 94%;
   background:rgb(217, 217, 217);
-  border-radius: 2%;
+  border-radius: 5px;
   margin-left: 15%;
   position: relative;
   margin-top: -40%;
@@ -387,19 +427,19 @@ opacity: 1;
   left: -18%;
 }
 .ch img {
-  width: 100%;
+  width: 90%;
   min-height: 218px;
   left: -8%;
   top: 135px;
-  border-radius: 2%;
+  border-radius: 5px;
   position: absolute;
   z-index: 2;
 }
 .ch .more {
   position: absolute;
+  margin-left: -8%;
   width: 90%;
-  left: -8%;
-  margin-top: 83%;
+  bottom: -34%;
 }
  .lineUP {
    max-width: 100%;
@@ -411,24 +451,33 @@ opacity: 1;
  }
  .lineUP img {
   width: 100%;
-  height: 280px;
+  height: 380px;
   object-fit: cover;
  }
- .lineUP p,.lineUP .outline {
-   font-family: Arial, Helvetica, sans-serif;
+ .lineUP p,.lineUP .details{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
    width: 80%;
    margin: 10px auto;
    font-size: 1rem;
    line-height: 35px;
    letter-spacing: 5px;
  }
+ .lineUP p {
+   letter-spacing: 1px;
+ }
+ .lineUP-contents img {
+   height: 255px;
+ }
 .seriesName {
    font-weight: bold;
+   font-size: 0.8rem;
  }
+ 
 .moreInfo {
   margin-left: 50px;
   font-weight: bold;
   display: flex;
+  top: 5px;
 }
 .arrow_bl {
   position: relative;
@@ -457,6 +506,7 @@ opacity: 1;
   height: 1px;
   background: black;
 }
+
 .global {
   padding-top: 200px;
   margin-top: 60px;
@@ -575,7 +625,6 @@ opacity: 1;
 .blurTriangle_blue, .blurTriangle_brown ,.blurTriangle_red{
   animation: 3s  blurTriangle_blue infinite,3s  blurTriangle_brown infinite,3s blurTriangle_red infinite;
 }
-
 body {
   font-size: 10px;
 }
@@ -631,10 +680,20 @@ span {
   border-radius: 5px;
   margin-left: 10%;
 }
+.for_business_p {
+  margin: -6% auto 4% 10%;
+  font-size: 0.9rem;
+}
+.outline {
+  line-height: 35px;
+}
 .seriesName,.for_business .outline {
   width: 80%;
   font-size: 1rem;
   margin: 5px auto;
+}
+.moreInfo {
+  display: flex;
 }
 footer {
   text-align: center;
@@ -646,7 +705,6 @@ footer {
 }
 .web_store p {
   font-size: 0.9rem;
-  
 }
 .link_camera , .link_town {
   width: 80%;
@@ -655,20 +713,21 @@ footer {
   padding: 1%;
   border-radius: 5px;
   height: 60px;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .link_camera a, .link_town a {
   text-decoration: none;
   color: black;
-  margin: 0 auto 5% 2%;
+  margin-left: 10px;
 }
 .link_camera img , .link_town img {
   width: 35px;
+  margin-top: 10px;
+  margin-bottom: -13px;
 }
 .link_camera img {
   border-radius: 50%;
-
-
+  
 }
 .link_town img {
   border-radius: 15%;
@@ -698,7 +757,8 @@ footer {
 .sns_icon img {
   width: 27px;
   mix-blend-mode: multiply;
-  margin: auto 10px;
+  margin: 0px auto;
+ 
 }
 .sns_icon p {
   margin-bottom: 25px;
@@ -719,7 +779,7 @@ footer {
   border-width: 0.3em;
   border-left-color: currentColor;
   border-right: 0;
-  margin: -22px auto;
+  margin: -13px auto;
   margin-right: 10px;
 }
               
@@ -759,5 +819,75 @@ footer {
       font-size: 1rem;
       font-family: Arial, Helvetica, sans-serif;
       letter-spacing: 2px;
-      
     }
+
+    #arrowAnim {
+      width: 5px;
+      height: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .arrows {
+      width: 5px;
+      height: 5px;
+      border: 1px solid;
+      border-color: black transparent transparent black;
+      transform: rotate(135deg);
+    }
+    .arrowSliding {
+      margin-left: 10%;
+      position: absolute;
+      -webkit-animation: slide 2s linear infinite; 
+              animation: slide 2s linear infinite;
+    }
+    .delay1 {
+      -webkit-animation-delay: .5s; 
+        animation-delay: .5s;
+    }
+    .delay2 {
+      -webkit-animation-delay: 1s; 
+        animation-delay: 1s;
+    }
+    .delay3 {
+      -webkit-animation-delay: 1.5s; 
+        animation-delay: 1.5s;
+    }
+    
+    @-webkit-keyframes slide {
+        0% { opacity:0; transform: translateX(-10vw); }	
+       20% { opacity:1; transform: translateX(-5vw); }	
+       80% { opacity:1; transform: translateX(5vw); }	
+      100% { opacity:1; transform: translateX(10vw); }	
+    }
+    @keyframes slide {
+        0% { opacity:0; transform: translateX(-10vw); }	
+       20% { opacity:1; transform: translateX(-5vw); }	
+       80% { opacity:1; transform: translateX(5vw); }	
+      100% { opacity:1; transform: translateX(10vw); }	
+    }
+    .infoAnimation {
+      background: white;
+      width: 85%;
+      margin: auto;
+      height:30px;
+      overflow: hidden;
+      border-radius: 999px;
+    }
+    .infoAnimation p{
+      font-size: 0.7rem;
+      color:#FFF;
+      animation: flowing 10s linear infinite;
+      transform: translate(100%);
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 5px;
+      white-space: nowrap
+    }
+    @keyframes flowing {
+      100% {
+        transform: translate(-100%);
+      }
+    }
+  
+    
