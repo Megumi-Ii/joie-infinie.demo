@@ -49,7 +49,8 @@
           <div class="tinyTriangle_red"></div>
           <div class="items">
               <div class="contents">
-            <h1>PICKUP <br>ITEMS </h1>
+        　　<div class="scroll_up"><h1>PICKUP </h1></div>
+           <div class="scroll_up"><h1> ITEMS </h1></div>
             <div class="sub_title">
                 joie infinie.の<br>トレンドアイテムをセレクト
             </div>
@@ -81,7 +82,8 @@
             </div>
             <div class="wrapper">
                 <div class="introduce">
-            <h1>joie infinie. Loves </h1>
+                    <div class="scroll_up"><h1>joie infinie. </h1></div>
+                    <div class="scroll_up"><h1>Loves </h1></div>
             <div class="tinyTriangle_red"></div>
                 <div class="sentence">
                     LIFEをベースにファッションをはじめ、インテリア関連やペット用品、
@@ -138,7 +140,8 @@
             <div class="eventInfo">
                 <div class="event_box">
                 <div class="blurTriangle_red"></div>
-            <h1><br>FRIENDSHIP <br>STORE EVENT</h1>
+                <div class="scroll_up"><h1>FRIENDSHIP </h1></div><br>
+                <div class="scroll_up"><h1>STORE EVENT</h1></div>
             <div class="sentence">全国の店舗で様々なイベントを開催しています。一部の店舗限定もありますので、この機会に是非遊びにきてください。</div>
                 </div>
             <div class="event_block">
@@ -165,7 +168,7 @@
                 <div class="youtube_contents">
                 <div class="youtube_block1">
                 <div class="plays">
-                <h1>BEAUTIFUL <br>LIFE</h1>
+                    <div class="scroll_up"><h1>BEAUTIFUL <br> LIFE</h1></div>
                 <div class="circle">
                     <img src="images/p_grad.png" alt="">
                     <div class="inner">
@@ -210,7 +213,7 @@
             <div class="wrapper">
         <div class="news">
             <div class="tinyTriangle_red"></div>
-            <h1>News</h1>
+            <div class="scroll_up"><h1>News</h1></div>
                 <p>joie infinie.からのお知らせ</p>
         <div class="news_block">
             <div class="newsContents">
@@ -234,7 +237,7 @@
         </div>
         <div class="ch">
             <div class="ch_outline">
-            <h1>ジョワCh</h1>
+                <div class="scroll_up"><h1>ジョワCh</h1></div>
             <p>インテリアについてのYouTubeチャンネル。</p>
         </div>
         <div class="ch_block">
@@ -244,7 +247,8 @@
         </div>
 
         <div class="lineUP">
-            <h1>Series Lineup</h1>
+            <div class="scroll_up"><h1>Series</h1></div>
+            <div class="scroll_up"><h1> Lineup</h1></div>
             <div class="lineUP_outline">ファッションやインテリア、キッチン雑貨など...ライフスタイルに身近なアイテムをラインナップしています。</div>
             <div class="lineUP-contents">
                 <img src="images/new_collect.jpeg" alt="">
@@ -281,9 +285,9 @@
             </div>
             <div class="blurTriangle_red"></div>
             <div class="global-store">
-                <h1>GLOBAL <br>FRIENDRSHIP<br>STORE</h1>
-                <div class="global">
+                <div class="scroll_up"><h1>GLOBAL<br>FRIENDRSHIP<br>STORE</h1></div>
                     <p class="sub_sentence">海外に展開するjoie infinie.の関連店。</p>
+                    <div class="global">
                 <div class="country">
                 <div class="malta"><img src="images/malta.png" alt=""></div>
                     <div class="place"><img src="images/pin.png" alt="">MALTA <br><p>マルタ</p></div><div class="right"></div></div>
@@ -320,7 +324,21 @@
             <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-     
+    <script>
+        $(window).scroll(function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+  var scrollAnimationFunc = function () {
+    for (var i = 0; i < scrollAnimationElm.length; i++) {
+      var triggerMargin = 80;
+      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('on');
+      }
+    }
+  }
+  window.addEventListener('load', scrollAnimationFunc);
+  window.addEventListener('scroll', scrollAnimationFunc);
+});
+    </script>
     <script>
         $('.slider').slick({
         autoplay: true,
