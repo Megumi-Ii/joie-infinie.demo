@@ -22,7 +22,7 @@ img {
   position: relative;
   margin-top: 43px;
 }
-.hidden_headerNav, .hidden_headerNav li,.header h1,.header p,.slick-dots,.more  {
+.hidden_headerNav, .hidden_headerNav li,.header h1,.header p,.slick-dots,.more,.city  {
   text-align: center;
 }
 .hidden_headerNav {
@@ -104,7 +104,10 @@ h1 {
   letter-spacing: 0.2px;
 }
 .items h1 {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+.scroll_up_2 h1 {
+  margin-top: -30px;
 }
 .items {
   width: 92%;
@@ -349,7 +352,6 @@ h4 {
 .city {
   font-size: 1.2rem;
   position: relative;
-  text-align: center;
   z-index: 3;
   margin-top: 34px;
 }
@@ -613,7 +615,7 @@ h3 {
   width: 90%;
   bottom: 10%;
 }
- .lineUP h1 {
+ .lineUP .scroll_up h1{
    margin-top: 50px;
    font-size: 3.6rem;
  }
@@ -818,12 +820,15 @@ footer {
   margin: auto;
   opacity: .4;
 }
-.scroll_up {
+.scroll_up, .scroll_up_2 {
   transition: 0.8s ease-in-out;
   transform: translateY(50px);
   opacity: 0;
 }
-.scroll_up.on {
+.scroll_up_2 {
+  transition: 1s ease-in-out;
+}
+.scroll_up.on,.scroll_up_2.on {
   transform: translateY(0);
   opacity: 1.0;
 }

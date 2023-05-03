@@ -50,7 +50,7 @@
           <div class="items">
               <div class="contents">
         　　<div class="scroll_up"><h1>PICKUP </h1></div>
-           <div class="scroll_up"><h1> ITEMS </h1></div>
+           <div class="scroll_up_2"><h1> ITEMS </h1></div>
             <div class="sub_title">
                 joie infinie.の<br>トレンドアイテムをセレクト
             </div>
@@ -83,7 +83,7 @@
             <div class="wrapper">
                 <div class="introduce">
                     <div class="scroll_up"><h1>joie infinie. </h1></div>
-                    <div class="scroll_up"><h1>Loves </h1></div>
+                    <div class="scroll_up_2"><h1>Loves </h1></div>
             <div class="tinyTriangle_red"></div>
                 <div class="sentence">
                     LIFEをベースにファッションをはじめ、インテリア関連やペット用品、
@@ -141,7 +141,7 @@
                 <div class="event_box">
                 <div class="blurTriangle_red"></div>
                 <div class="scroll_up"><h1>FRIENDSHIP </h1></div><br>
-                <div class="scroll_up"><h1>STORE EVENT</h1></div>
+                <div class="scroll_up_2"><h1>STORE EVENT</h1></div>
             <div class="sentence">全国の店舗で様々なイベントを開催しています。一部の店舗限定もありますので、この機会に是非遊びにきてください。</div>
                 </div>
             <div class="event_block">
@@ -248,7 +248,7 @@
 
         <div class="lineUP">
             <div class="scroll_up"><h1>Series</h1></div>
-            <div class="scroll_up"><h1> Lineup</h1></div>
+            <div class="scroll_up_2"><h1> Lineup</h1></div>
             <div class="lineUP_outline">ファッションやインテリア、キッチン雑貨など...ライフスタイルに身近なアイテムをラインナップしています。</div>
             <div class="lineUP-contents">
                 <img src="images/new_collect.jpeg" alt="">
@@ -285,7 +285,9 @@
             </div>
             <div class="blurTriangle_red"></div>
             <div class="global-store">
-                <div class="scroll_up"><h1>GLOBAL<br>FRIENDRSHIP<br>STORE</h1></div>
+                <div class="scroll_up"><h1>GLOBAL</h1></div>
+                <div class="scroll_up_2"><h1>FRIENDRSHIP</h1></div>
+                <div class="scroll_up_3"><h1>STORE</h1></div>
                     <p class="sub_sentence">海外に展開するjoie infinie.の関連店。</p>
                     <div class="global">
                 <div class="country">
@@ -327,6 +329,21 @@
     <script>
         $(window).scroll(function () {
   var scrollAnimationElm = document.querySelectorAll('.scroll_up');
+  var scrollAnimationFunc = function () {
+    for (var i = 0; i < scrollAnimationElm.length; i++) {
+      var triggerMargin = 80;
+      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('on');
+      }
+    }
+  }
+  window.addEventListener('load', scrollAnimationFunc);
+  window.addEventListener('scroll', scrollAnimationFunc);
+});
+    </script>
+    <script>
+        $(window).scroll(function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up_2');
   var scrollAnimationFunc = function () {
     for (var i = 0; i < scrollAnimationElm.length; i++) {
       var triggerMargin = 80;
