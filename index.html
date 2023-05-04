@@ -168,7 +168,8 @@
                 <div class="youtube_contents">
                 <div class="youtube_block1">
                 <div class="plays">
-                    <div class="scroll_up"><h1>BEAUTIFUL <br> LIFE</h1></div>
+                    <div class="scroll_up"><h1>BEAUTIFUL</h1></div>
+                    <div class="scroll_up_2"><h1>LIFE</h1></div>
                 <div class="circle">
                     <img src="images/p_grad.png" alt="">
                     <div class="inner">
@@ -221,7 +222,6 @@
                 <img src="images/interiorCode.jpeg" alt="">
                 <div class="info">joie infinie.から新たにインテリア商品が登場。おうち時間がきっと楽しくなる。</div>
             </div>
-  
             <div class="newsContents">
                 <div class="new">NEW</div>
                 <img src="images/meetSuit.jpeg" alt="">  
@@ -356,6 +356,22 @@
   window.addEventListener('scroll', scrollAnimationFunc);
 });
     </script>
+    </script>
+    <script>
+        $(window).scroll(function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up_3');
+  var scrollAnimationFunc = function () {
+    for (var i = 0; i < scrollAnimationElm.length; i++) {
+      var triggerMargin = 80;
+      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('on');
+      }
+    }
+  }
+  window.addEventListener('load', scrollAnimationFunc);
+  window.addEventListener('scroll', scrollAnimationFunc);
+});
+    </script>
     <script>
         $('.slider').slick({
         autoplay: true,
@@ -462,7 +478,7 @@ $('span').each(function(index) {
             </div>
 
             <div class="sns_icon">
-                <p>Offcial SNS</p>
+                <div class="sns_p">Offcial SNS</div> 
                 <img src="images/line.jpeg" alt="">
                 <img src="images/instagram.jpeg" alt="">
                 <img src="images/facebook.jpeg" alt="">
@@ -471,8 +487,7 @@ $('span').each(function(index) {
                 <img src="images/tiktok.svg" alt="">
             </div>
             <div class="sub_name">meet suit</div>
-            <div class="name">
-                joie infinie.</div>
+            <div class="name">joie infinie.</div>
           </div>
         <div class="copyRight"> CopyRight@2023 joie infinie.demo</div>
           </div>
