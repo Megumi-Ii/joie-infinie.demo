@@ -44,8 +44,7 @@ img {
   position: relative;
   margin-top: 43px;
 }
-.hidden_headerNav,.hidden_headerNav li,#int-slider,.eventContents,.circle,
-.arrowAnimation,#arrowAnim,.newsContents,.country  {
+.hidden_headerNav,.hidden_headerNav li,#int-slider,.eventContents,.circle,.arrowAnimation,#arrowAnim,.newsContents,.country  {
   display: flex;
 }
 .hidden_headerNav {
@@ -783,6 +782,11 @@ footer {
 }
 
 
+
+
+
+
+
 @media screen and (min-width:771px) {  
   .header {
     height: 200px;
@@ -968,12 +972,12 @@ footer {
   display: flex;
 }
 }
+
 @media screen and (min-width:807px) {
 }
 @media screen and (min-width:1021px) {
 }
 @media screen and (min-width:1201px) {
 }
-
 
   
