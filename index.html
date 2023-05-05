@@ -7,35 +7,53 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@900&display=swap" rel="stylesheet">  
     <title>joie-infinie.demo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/5-1-11.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/css/5-1-11.css">
 </head>
 <body>
-    <div class="header">
-        <div class="shapeTriangle_red "></div>
+        <div class="header">
+            <div class="shapeTriangle_red"></div>
         <p>meet suit</p>
         <h1>joie infinie.</h1>
       </div>
+    <div class="openNav"><div class="span"></div><div class="span"></div><div class="span"></div></div>
+    <div class="dropNav">
+        <p>meet suit</p>
+        <div class="title">joie infinie.</div>
+    <ul>
+        <li><a href="#">TOP</a><p>トップ</p></li>
+        <li><img src="" alt=""><a href="#">joie infinie...Loves</a></li>
+        <li><a href="#">News</a>
+          <p>ニュース</p>
+          <div class="right_arow"></div><p>shops</p>
+          <div class="right_arow"></div><p>for Buisiness</p>
+        </li>
+        <div class="border"></div>
+        <p class="bordr_line"></p>
+        <div class="link_camera">
+            <div class="camera"><img src="images/camera.jpeg" alt=""><a href="">ポートレート</a></div></div>
+ 
+        <div class="link_town">
+            <div class="town"><img src="images/town.jpeg" alt=""><a href="">ville</a></div></div>
+
+      <div class="sns_icon">
+          <div class="sns_p"></div> 
+          <img src="images/line.jpeg" alt="">
+          <img src="images/instagram.jpeg" alt="">
+          <img src="images/facebook.jpeg" alt="">
+          <img src="images/twitter.png" alt="">
+          <img src="images/you.jpeg" alt="">
+          <img src="images/tiktok.svg" alt="">
+      </div>
+    </ul>
+    </div>
       <div class="hidden_headerNav">
           <li class="">特集<p></p></li>
           <div class="border_left"></div>
           <li class="">YouTube <P></P></li>
           <div class="border_right"></div>
           <li class="">ニュース<P></P></li>
-      </div>
-      <div class="drop_down">
-           <nav>
-               <ul>
-                 <p>meet suit</p>
-                 <div class="title">joie infinie.</div>
-                 <li><a href="#">TOP</a><p>トップ</p></li>
-                 <li><img src="" alt=""><a href="#">joie infinie...Loves</a></li>
-                 <li><a href="#">News</a><p>ニュース</p>
-                   <p>shops</p>
-                   <p>for Buisiness</p>
-                 </li>
-                 <li><a href="">ジョワ</a></li>
-                 <p class="bordr-line"></p>
-               </ul>
-           </nav>
       </div>
            <div class="wrapper">
             <ul class="slider">
@@ -86,8 +104,8 @@
                     <div class="scroll_up_2"><h1>Loves </h1></div>
             <div class="tinyTriangle_red"></div>
                 <div class="sentence">
-                    LIFEをベースにファッションをはじめ、インテリア関連やペット用品、
-                    コスメやアクセサリーなど幅広く様々なコンテンツを展開しています。
+                    LIFEをベースにファッションやインテリア関連、ペット用品、
+                    コスメなど幅広いアイテムを展開しています。
                     是非、お気に入りの物を見つけてみて下さい。
                 </div>
             <div class="moreInfo"><div class="arrow_bl"></div><p>About</p></div>
@@ -222,6 +240,7 @@
                 <img src="images/interiorCode.jpeg" alt="">
                 <div class="info">joie infinie.から新たにインテリア商品が登場。おうち時間がきっと楽しくなる。</div>
             </div>
+  
             <div class="newsContents">
                 <div class="new">NEW</div>
                 <img src="images/meetSuit.jpeg" alt="">  
@@ -326,6 +345,17 @@
             <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+<script>
+    $(".openNav").click(function () {//ボタンがクリックされたら
+$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+$(".dropNav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+});
+
+$(".dropNav a").click(function () {//ナビゲーションのリンクがクリックされたら
+$(".openNav").removeClass('active');//ボタンの activeクラスを除去し
+$(".dropNav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+});
+</script>
     <script>
         $(window).scroll(function () {
   var scrollAnimationElm = document.querySelectorAll('.scroll_up');
@@ -341,6 +371,7 @@
   window.addEventListener('scroll', scrollAnimationFunc);
 });
     </script>
+    
     <script>
         $(window).scroll(function () {
   var scrollAnimationElm = document.querySelectorAll('.scroll_up_2');
@@ -405,7 +436,7 @@
  <script>
     $('.slide_loves').slick({
   infinite: true,
-  speed: 700,
+  speed: 600,
   asNavFor:"#sen-slider",
   variableWidth: true,
   autoplay: true,
@@ -418,7 +449,7 @@ $("#sen-slider").slick({
     arrows:false ,  
     slidesToShow: 2, 
     slidesToScroll: 1,
-    speed:700,    
+    speed:600,    
  })
 </script>
  
@@ -469,16 +500,9 @@ $('span').each(function(index) {
               <div class="border"></div>
               <div class="link_town">
                   <div class="town"><img src="images/town.jpeg" alt=""><a href="">ville</a><div class="right_arow"></div></div></div>
-              <div class="logo">
-                  <img src="" alt="">
-              </div>
-              
-              <div class="logo">
-                <img src="" alt="">
-            </div>
-
+            
             <div class="sns_icon">
-                <div class="sns_p">Offcial SNS</div> 
+                <div class="sns_p">Official SNS</div> 
                 <img src="images/line.jpeg" alt="">
                 <img src="images/instagram.jpeg" alt="">
                 <img src="images/facebook.jpeg" alt="">
