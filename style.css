@@ -7,9 +7,11 @@
     letter-spacing: 1px;
     font-weight: bold;
 }
+.header,body, .wrapper, .header,.animation,.animation img{
+  max-width: 100%;
+  width: 100%;
+}
 .header {
-  width:100%;
-  background:#FFF;
   text-align: center;
   position: relative;
   margin-top: 43px;
@@ -19,20 +21,69 @@
   margin: -14px auto 0 auto;
   letter-spacing: 3px;
 }
+.header.HeightMin,.eventContents,footer .link_camera ,footer .link_town,.lineUP-contents img {
+  filter:drop-shadow(1px 1px 1px gray);
+}
+.header.HeightMin{
+  position: fixed;
+  z-index: 999;
+  height: 70px;
+  animation: DownAnime 0.5s forwards;
+  width: 98%;
+  margin: 30px 1%;
+  border-radius: 5px;
+  transition: .5s;
+}
+.header.HeightMin h1 {
+  font-size: 1.4rem;
+  margin-left: -60%;
+}
+.header.HeightMin p,.header.HeightMin .shapeTriangle_red{
+  display: none;
+}
+.header.HeightMin .openNav{
+  margin-top: 10px;
+}
+@keyframes DownAnime{
+from {
+  transform: translateY(-170px);
+  transition: .5s;
+}
+to {
+  transform: translateY(0);
+  transition: .5s;
+}
+}
 .dropNav {
   position:fixed;
   height: 66vh;
   z-index: 999;
   top:-120%;
-  width:100%;
-  background-color:#FFF;
   transition: all 0.6s;
   width: 98%;
   margin: 0 1%;
   border-radius: 5px;
 }
+.more,.lineUP-contents .moreInfo p,.infoAnimation p, .place p {
+  font-size: 0.7rem;
+}
+.web_store p,.sns_p,.sub_title .shops,.forBusiness,h2,h4,.newsContents p {
+  font-size: .8rem;
+}
+.info_text p,.eventContents p,.info,.sub_name, .sns_icon p, .lineUP p {
+  font-size: 1rem;
+}
+.news p,.ch p, .lineUP_outline,.lineUP .details {
+  font-size: 1.1rem;
+}
+.nav_name,.nav1,.city,.items .sub_title,.sentence, .business_outline   {
+  font-size: 1.2rem;
+}
 .dropNav .title {
   font-size: 2rem;
+}
+.sub_title {
+  margin: 25px auto 0 auto;
 }
 .dropNav.panelactive{
   top: 0;
@@ -40,36 +91,69 @@
 .dropNav ul {
   z-index: 999;
 }
-.dropNav p,.dropNav li,.title{
-  list-style: none;
+.dropNav .title, .dropNav .sub_title,.dropNav .sns_icon{
   text-align: center; 
-  color: black;
 }
-.dropNav li a{
-text-decoration: none;
-padding:10px;
-text-transform: uppercase;
-letter-spacing: 0.1em;
-font-weight: bold;
-color: black;
+.nav_name {
+  margin: 5px 10px 5px 30px;
 }
-.dropNav .sns_icon {
-  text-align: center;
-  margin-bottom: -20px;
+.dropNav .animation img {
+  width: 20px;
+  margin: 10px 20px 10px 30px;
 }
 .dropNav .sns_icon img {
   margin: 0 5px;
 }
+.dropNav .border {
+  width: 90%;
+  margin: 5% auto;
+}
+.nav1 {
+  margin: 3px 5px;
+}
+.nav1 img{
+  width: 125px;
+  height: 110px;
+  border-radius: 5px;
+  margin-left: 80%;
+}
+.top,.nav2,.shops,.forBusiness {
+  margin: 10px 30px;
+}
+.link_a {
+  width: 100px;
+  margin: 35px auto;
+}
+.nav_link {
+  width: 30%;
+  margin: -30px auto 0 35% ;
+}
+.nav_link .camera {
+  margin-top: 26px;
+}
+.dropNav .nav_link img {
+  width: 30px;
+}
+.left_arow  {
+  border: solid  #333;
+  border-color: transparent;
+  border-width: 0.4em;
+  border-left-color: currentColor;
+  margin: 5px ;
+}
+.header p,.header h1,.openNav,img,.nav1,.nav2,.left{
+  cursor: pointer;
+}
 .openNav{
   position:fixed;
-  z-index: 9999;/*ボタンを最前面に*/
+  z-index: 9999;
   top:10px;
   right: 10px;
-  cursor: pointer;
   width: 50px;
   height:50px;
 }
 .openNav .span{
+  z-index: 9999;
   transition: all .4s;
   position: absolute;
   left: 12px;
@@ -105,10 +189,6 @@ p,.sub_name,.copyRight {
 .sentence, .outline,.info{
   font-family: 'Times New Roman', Times, serif;
 }
-body, .wrapper, .header,.animation,.animation img{
-  max-width: 100%;
-  width: 100%;
-}
 .wrapper,.infoAnimation {
   overflow: hidden;
 }
@@ -120,23 +200,22 @@ img {
 .items,.eventInfo, .youtubeInfo,.ch,.global-store,.slick-dots button,footer {
   background:rgb(240, 240, 240);
 }
-.arrow::after, .arrow_bl::after,.eventContents,.infoAnimation,.link_camera , .link_town {
+.header,.dropNav,.arrow::after, .arrow_bl::after,.eventContents,.infoAnimation,.link_camera , .link_town {
   background: #FFF;
 }
-#int-slider img,.eventContents,.event-p img,.youtubeInfo,.slide_loves img,
-.news img,.ch,.ch img,.malta img, .paris img, .canada img,.link_camera , .link_town,.for_business img {
+#int-slider img,.eventContents,.event-p img,.youtubeInfo,.slide_loves img,.news img,.ch,.ch img,.malta img, .paris img, .canada img,.link_camera , .link_town,.for_business img,.link_town img  {
   border-radius: 5px;
 }
 .hidden_headerNav, .hidden_headerNav li,.header h1,.header p,.new,.slick-dots,.more,.city,footer   {
   text-align: center;
 }
-.hidden_headerNav,.hidden_headerNav li,#int-slider,.eventContents,.circle,.arrowAnimation,#arrowAnim,.newsContents,.country  {
+.hidden_headerNav,.hidden_headerNav li,#int-slider,.eventContents,.circle,.arrowAnimation,#arrowAnim,
+.newsContents,.country, .nav_link,.top,.shops, .forBusiness,.nav_block,.info_nav {
   display: flex;
 }
 .hidden_headerNav {
   justify-content: space-around;
   margin: -8% auto 6% auto;
-  font-size: .7rem;
   width: 300px;
   opacity: 0;
 }
@@ -209,12 +288,10 @@ body h1 {
   margin-left: 9%;
 }
 .items .sub_title {
-  font-size: 1.2rem;
   line-height: 30px;
 }
 h2 {
   margin: 18px auto auto 9%;
-  font-size: 0.9rem;
 }
 #int-slider {
   width: 125%;
@@ -235,11 +312,9 @@ h2 {
 }
 h4 {
   margin: 10px auto;
-  font-size: .8rem;
   color: red;
 }
 .info_text p {
-  font-size: 1.1rem;
   line-height: 32px;
   letter-spacing: 2px;
   width: 240px;
@@ -262,7 +337,6 @@ h4 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 32px;
   z-index: 2;
-  font-size: 1.1rem;
 }
 .moreInfo {
   font-weight: bold;
@@ -274,7 +348,7 @@ h4 {
 .animation,.animation img,.slide_youtube,.sns_icon,.sns_icon img,.infoAnimation,.news,.border,.slide_loves   {
   margin: 0% auto;
 }
-.animation {
+.anime_block .animation {
   margin-top: -30px;
   position: relative;
   width: 40%;
@@ -323,7 +397,6 @@ h4 {
   width: 86%;
   background: black;
   color: #FFF;
-  font-size: 0.7rem;
   padding: 12px;
   border-radius: 9999px;
 }
@@ -370,9 +443,6 @@ h4 {
 .arrow_bl::after {
   background: black;
 }
-.lineUP-contents .moreInfo p {
-  font-size: 0.7rem;
-}
 .eventInfo {
   width: 100%;
   padding-bottom: 60px;
@@ -401,7 +471,6 @@ h4 {
 .eventContents p {
   width: 75%;
   margin: 8%;
-  font-size: 1rem;
   letter-spacing: 3px;
   line-height: 30px;
 }
@@ -414,7 +483,6 @@ h4 {
   margin-left: 30px;
 }
 .city {
-  font-size: 1.2rem;
   position: relative;
   z-index: 3;
   margin-top: 34px;
@@ -441,7 +509,7 @@ h4 {
   animation: 3s  blurTriangle_blue infinite,3s  blurTriangle_brown infinite,3s blurTriangle_red infinite;
 }
 body {
-  font-size: 10px;
+  font-size: .6rem;
 }
 .circle,.inner,.link_camera img,.slick-dots button  {
   border-radius: 50%;
@@ -564,7 +632,6 @@ h3 {
   border-radius: 99px;
 }
 .infoAnimation p{
-  font-size: 0.7rem;
   animation: flowing 15s linear infinite;
   transform: translate(100%);
   color: black;
@@ -581,10 +648,6 @@ h3 {
 }
 .news p,.ch p {
   margin: auto auto 10px 40px;
-  font-size: 1.1rem;
-}
-.newsContents p {
-  font-size: 0.9rem;
 }
 .news img {
   width: 120px;
@@ -607,7 +670,6 @@ h3 {
   position: absolute;
   left: 180px;
   margin-top: 50px;
-  font-size: 1rem;
   line-height: 30px;
   font-family:monospace;
 }
@@ -658,23 +720,21 @@ h3 {
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    width: 86%;
    margin: 20px auto;
-   font-size: 1.1rem;
    line-height: 32px;
    letter-spacing: 3px;
  }
  .lineUP p {
    margin: 3% auto 4% 7%;
-   letter-spacing: 1px;
    font-weight: bold;
-   font-size: 1rem;
  }
- .lineUP-contents img {
+.lineUP-contents img {
    height: 240px;
  }
 .global-store {
   margin-top: 50px;
   height: 100%;
   position: relative;
+  padding-bottom: 30px;
 }
 .global-store .scroll_up h1 {
   margin-top: -30px;
@@ -695,7 +755,6 @@ h3 {
 }
 .global-store .sub_sentence {
   margin: 0px auto 100px 10%;
-  width: 100%;
   position: absolute;
   top: 220px;
 }
@@ -724,7 +783,6 @@ h3 {
  }
  .place p {
    margin-left: 45px;
-   font-size: 0.7rem;
  }
  .right, .right_arow  {
   width: 0;
@@ -778,7 +836,6 @@ h3 {
   border-radius: 30px;
 }
 .for_business img {
-  max-width: 100%;
   width: 80%;
   margin: 40px auto 40px 10%;
 }
@@ -789,17 +846,14 @@ h3 {
 footer {
   height: 600px; 
 }
-.web_store  {
-  margin-top: 3%;
-}
-.web_store p {
-  font-size: 0.9rem;
-}
-.link_camera , .link_town {
+footer .link_camera ,footer .link_town {
   width: 80%;
-  margin: 24px auto;
+  margin: 0px auto 25px auto;
   padding: 1%;
   height: 60px;
+}
+.link_town  {
+  margin: 25px auto 45px auto;
 }
 .link_camera a, .link_town a {
   text-decoration: none;
@@ -810,12 +864,8 @@ footer {
   width: 35px;
   margin: 10px auto -13px auto;
 }
-.link_town img {
-  border-radius: 15%;
-}
 .sub_name, .sns_icon p{
-  font-size: 1rem;
-  margin: 10px auto 5px auto;
+  margin: 30px auto 0 auto;
 }
 .name {
   font-size: 2.3rem;
@@ -824,14 +874,12 @@ footer {
 .copyRight, .web_store p {
   margin: 10px auto;
 }
-.footer_name p {
-  font-size: 0.4rem;
-}
 .sns_icon img {
   width: 27px;
+  margin: auto 10px;
   mix-blend-mode: multiply;
 }
-.sns_icon p {
+.sns_p,.sns_icon p,.border {
   margin-bottom: 25px;
 }
 .border {

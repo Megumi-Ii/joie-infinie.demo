@@ -16,29 +16,38 @@
             <div class="shapeTriangle_red"></div>
         <p>meet suit</p>
         <h1>joie infinie.</h1>
-      </div>
-    <div class="openNav"><div class="span"></div><div class="span"></div><div class="span"></div></div>
-    <div class="dropNav">
-        <p>meet suit</p>
+        </div>
+        <div class="dropNav">
+        <div class="openNav"><div class="span"></div><div class="span"></div><div class="span"></div></div>
+        <div class="sub_title">meet suit</div>
         <div class="title">joie infinie.</div>
-    <ul>
-        <li><a href="#">TOP</a><p>トップ</p></li>
-        <li><img src="" alt=""><a href="#">joie infinie...Loves</a></li>
-        <li><a href="#">News</a>
-          <p>ニュース</p>
-          <div class="right_arow"></div><p>shops</p>
-          <div class="right_arow"></div><p>for Buisiness</p>
-        </li>
+       <ul>
+        <div class="top"><div class="nav1">Top</div><div class="nav2">トップ</div></div>
+        <div class="animation">
+            <img src="images/s_r.jpeg" alt="">
+            <img src="images/s_b.jpeg" alt="">
+            <img src="images/s_y.jpeg" alt="">
+            <img src="images/s_g.jpeg" alt="">
+            <img src="images/s_o.jpeg" alt="">
+       </div>
+        <div class="top"><div class="nav_name">joie infinie.</div></div>
+        <div class="info_nav">
+            <div class="nav_news">
+        <div class="top"><div class="nav1">News</div><div class="nav2">ニュース</div></div>
+          <div class="shops"><div class="left_arow"></div><div class="left">Shops</div></div>
+          <div class="forBusiness"><div class="left_arow"></div><div class="left">For Business</div></div>
+        </div>
+          <div class="nav1"><img src="images/j_ch.jpeg" alt=""></div>
+        </div>
         <div class="border"></div>
-        <p class="bordr_line"></p>
+        <div class="nav_link">
+            <div class="link_a">ONLINE STORE</div>
         <div class="link_camera">
-            <div class="camera"><img src="images/camera.jpeg" alt=""><a href="">ポートレート</a></div></div>
- 
+            <div class="camera"><a href=""><img src="images/camera.jpeg" alt=""></a></div></div>
         <div class="link_town">
-            <div class="town"><img src="images/town.jpeg" alt=""><a href="">ville</a></div></div>
-
+            <div class="town"><a href=""><img src="images/town.jpeg" alt=""></a></div></div>
+      </div>
       <div class="sns_icon">
-          <div class="sns_p"></div> 
           <img src="images/line.jpeg" alt="">
           <img src="images/instagram.jpeg" alt="">
           <img src="images/facebook.jpeg" alt="">
@@ -240,7 +249,6 @@
                 <img src="images/interiorCode.jpeg" alt="">
                 <div class="info">joie infinie.から新たにインテリア商品が登場。おうち時間がきっと楽しくなる。</div>
             </div>
-  
             <div class="newsContents">
                 <div class="new">NEW</div>
                 <img src="images/meetSuit.jpeg" alt="">  
@@ -346,14 +354,45 @@
             <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 <script>
-    $(".openNav").click(function () {//ボタンがクリックされたら
-$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-$(".dropNav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    var headerH = $(".header").outerHeight(true);  
+function FixedAnime() {
+  var scroll = $(window).scrollTop();
+  if (scroll >= headerH){
+        $('.header').addClass('HeightMin');
+  }else{
+        $('.header').removeClass('HeightMin');
+  }    
+}
+
+$(window).scroll(function () {
+  FixedAnime();
+});
+$(window).on('load', function () {
+  FixedAnime();
+});
+$('.header h1').click(function () {
+  var headerVal = $(".header").outerHeight(true);
+  var scroll = $(window).scrollTop(); 
+  var adjust = 0           
+  if(scroll <= headerVal ){    
+    adjust = 70;          
+  }
+  var elmHash = $(this).attr('href');
+  var pos = $(elmHash).offset().top-headerVal-adjust; 
+  $('body,html').animate({scrollTop: pos}, 1000);
+  return false;
 });
 
-$(".dropNav a").click(function () {//ナビゲーションのリンクがクリックされたら
-$(".openNav").removeClass('active');//ボタンの activeクラスを除去し
-$(".dropNav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+</script>
+<script>
+    $(".openNav").click(function () {
+$(this).toggleClass('active');
+$(".dropNav").toggleClass('panelactive');
+});
+
+$(".dropNav a").click(function () {
+$(".openNav").removeClass('active');
+$(".dropNav").removeClass('panelactive');
 });
 </script>
     <script>
@@ -487,22 +526,19 @@ $('span').each(function(index) {
 });
 
 </script>
-
     </body>
       <footer>
           <div class="footer_block">
-      
         <div class="blurTriangle_blue"></div>
           <div class="web_store">
               <p>joie infinie.のweb store</p>
               <div class="link_camera">
-                  <div class="camera"><img src="images/camera.jpeg" alt=""><a href="">ポートレート</a><div class="right_arow"></div></div></div>
+              <div class="camera"><img src="images/camera.jpeg" alt=""><a href="">ポートレート</a><div class="right_arow"></div></div></div>
               <div class="border"></div>
               <div class="link_town">
-                  <div class="town"><img src="images/town.jpeg" alt=""><a href="">ville</a><div class="right_arow"></div></div></div>
-            
-            <div class="sns_icon">
-                <div class="sns_p">Official SNS</div> 
+              <div class="town"><img src="images/town.jpeg" alt=""><a href="">ville</a><div class="right_arow"></div></div></div>
+              <div class="sns_icon">
+              <div class="sns_p">Official SNS</div> 
                 <img src="images/line.jpeg" alt="">
                 <img src="images/instagram.jpeg" alt="">
                 <img src="images/facebook.jpeg" alt="">
@@ -513,7 +549,7 @@ $('span').each(function(index) {
             <div class="sub_name">meet suit</div>
             <div class="name">joie infinie.</div>
           </div>
-        <div class="copyRight"> CopyRight@2023 joie infinie.demo</div>
+        <div class="copyRight">CopyRight@2023 joie infinie.demo</div>
           </div>
       </footer>
 </html>
