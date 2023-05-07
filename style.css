@@ -16,6 +16,9 @@
   position: relative;
   margin-top: 43px;
 } 
+.header h1 {
+  margin: 10px auto 30px auto;
+}
 .header p {
   font-size: 1.6rem;
   margin: -14px auto 0 auto;
@@ -29,8 +32,8 @@
   z-index: 999;
   height: 70px;
   animation: DownAnime 0.5s forwards;
-  width: 98%;
-  margin: 30px 1%;
+  width: 97%;
+  margin: 0px 1.5%;
   border-radius: 5px;
   transition: .5s;
 }
@@ -64,7 +67,7 @@ to {
   margin: 0 1%;
   border-radius: 5px;
 }
-.more,.lineUP-contents .moreInfo p,.infoAnimation p, .place p {
+.more,.lineUP-contents .moreInfo p,.infoAnimation p, .place p,.hidden_headerNav{
   font-size: 0.7rem;
 }
 .web_store p,.sns_p,.sub_title .shops,.forBusiness,h2,h4,.newsContents p {
@@ -73,7 +76,7 @@ to {
 .info_text p,.eventContents p,.info,.sub_name, .sns_icon p, .lineUP p {
   font-size: 1rem;
 }
-.news p,.ch p, .lineUP_outline,.lineUP .details {
+.info,.news p,.ch p, .lineUP_outline,.lineUP .details {
   font-size: 1.1rem;
 }
 .nav_name,.nav1,.city,.items .sub_title,.sentence, .business_outline   {
@@ -111,11 +114,9 @@ to {
 .nav1 {
   margin: 3px 5px;
 }
-.nav1 img{
+.info_nav .nav1 img{
   width: 125px;
   height: 110px;
-  border-radius: 5px;
-  margin-left: 80%;
 }
 .top,.nav2,.shops,.forBusiness {
   margin: 10px 30px;
@@ -141,7 +142,7 @@ to {
   border-left-color: currentColor;
   margin: 5px ;
 }
-.header p,.header h1,.openNav,img,.nav1,.nav2,.left{
+.header p,.header h1,.openNav,img,.nav1,.nav2,.left,.hidden_headerNav li,.more,.moreInfo{
   cursor: pointer;
 }
 .openNav{
@@ -158,7 +159,6 @@ to {
   position: absolute;
   left: 12px;
   height: 2px;
-  border-radius: 2px;
   background: black;
   width: 21px;
 }
@@ -197,13 +197,17 @@ img {
   background-repeat: no-repeat;
   place-items: center;
 }
+img:hover {
+  opacity: .6;
+}
 .items,.eventInfo, .youtubeInfo,.ch,.global-store,.slick-dots button,footer {
   background:rgb(240, 240, 240);
 }
 .header,.dropNav,.arrow::after, .arrow_bl::after,.eventContents,.infoAnimation,.link_camera , .link_town {
   background: #FFF;
 }
-#int-slider img,.eventContents,.event-p img,.youtubeInfo,.slide_loves img,.news img,.ch,.ch img,.malta img, .paris img, .canada img,.link_camera , .link_town,.for_business img,.link_town img  {
+#int-slider img,.eventContents,.event-p img,.youtubeInfo,.slide_loves img,.news img,.ch,.ch img,.malta img, 
+.paris img, .canada img,.link_camera , .link_town,.for_business img,.link_town img,.info_nav .nav1 img ,.openNav .span {
   border-radius: 5px;
 }
 .hidden_headerNav, .hidden_headerNav li,.header h1,.header p,.new,.slick-dots,.more,.city,footer   {
@@ -242,7 +246,9 @@ img {
 .slider img{
     width: 100%;
     min-height: 500px;
-    background-repeat: no-repeat;
+}
+.slider img:hover,#int-slider img:hover {
+    opacity: .6;
 }
 .slick-dots {
     position: relative;
@@ -250,7 +256,6 @@ img {
 }
 .slick-dots li {
     display:inline-block;
-    margin:0 1px;
 }
 .slick-dots button {
     color: transparent;
@@ -290,8 +295,9 @@ body h1 {
 .items .sub_title {
   line-height: 30px;
 }
-h2 {
-  margin: 18px auto auto 9%;
+.items h2 {
+  margin: 20px auto 20px -70%;
+  font-size: .8rem;
 }
 #int-slider {
   width: 125%;
@@ -461,18 +467,10 @@ h4 {
 .eventContents {
   width: 88%;
   padding: 1%;
-  margin: -10px auto 30px auto;
+  margin: -10px 5% 30px 6%;
   position: relative;
   z-index: 1;
-}
-.eventContents:last-child {
-  margin-bottom: -10px;
-}
-.eventContents p {
-  width: 75%;
-  margin: 8%;
-  letter-spacing: 3px;
-  line-height: 30px;
+  height: 30%;
 }
 .event-p img,.event-o p {
   width: 100%;
@@ -480,7 +478,10 @@ h4 {
   margin: 6%;
 }
 .event-o p{
-  margin-left: 30px;
+  width: 70%;
+  margin: 10% 15%;
+  line-height: 26px;
+  letter-spacing: 3px;
 }
 .city {
   position: relative;
@@ -514,14 +515,21 @@ body {
 .circle,.inner,.link_camera img,.slick-dots button  {
   border-radius: 50%;
 }
+.plays h1 {
+  padding-top: 50px;
+  height: 2px;
+}
 .circle {
   position: relative;
-  top: -110px;
-  right: -300px;
+  top: -50px;
+  left: 80%;
   width: 90px;
   height: 90px;
   justify-content: center;
   align-items: center;
+}
+.youtube_block1 .sentence {
+  margin-top: 10%;
 }
 .inner {
   position: absolute;
@@ -560,8 +568,7 @@ body {
   transition: all .5s;
 }
 #sen-slider .info_text {
-  width: 310px;
-  margin-right: 60px;
+  width: 300px;
 }
 .slide_youtube img {
   width: 390px;
@@ -659,7 +666,7 @@ h3 {
   width: 50px;
   border-radius: 9999px;
   position: absolute;
-  left: 35%;
+  left: 200px;
   margin-top: 3%;
 }
 .news .more {
@@ -668,7 +675,7 @@ h3 {
 .info {
   width: 55%;
   position: absolute;
-  left: 180px;
+  left: 200px;
   margin-top: 50px;
   line-height: 30px;
   font-family:monospace;
@@ -712,10 +719,18 @@ h3 {
    margin-top: 50px;
    font-size: 3.6rem;
  }
- .lineUP img {
-   width: 100%;
-   height: 360px;
+ .lineUP-contents{
+   height: 500px;
+   overflow: hidden;
  }
+ .lineUP_box img {
+   width: 100%;
+   height: 280px;
+   transition: transform .6s ease;
+ }
+ .lineUP_box img:hover {
+  transform: scale(1.1);
+}
  .lineUP_outline,.lineUP .details{
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    width: 86%;
@@ -726,9 +741,6 @@ h3 {
  .lineUP p {
    margin: 3% auto 4% 7%;
    font-weight: bold;
- }
-.lineUP-contents img {
-   height: 240px;
  }
 .global-store {
   margin-top: 50px;
@@ -775,11 +787,17 @@ h3 {
  }
  .malta, .paris, .canada {
    display: flex;
+   overflow: hidden;
+   height:  130px;
  }
  .malta img, .paris img, .canada img {
    width: 130px;
    height:  130px;
    margin-top: 10px;
+   transition: transform .6s ease;
+ }
+ .malta img:hover, .paris img:hover, .canada img:hover {
+  transform: scale(1.2);
  }
  .place p {
    margin-left: 45px;
@@ -835,13 +853,24 @@ h3 {
 	border-left: 60px solid transparent;
   border-radius: 30px;
 }
+.for_business {
+  overflow: hidden;
+}
 .for_business img {
   width: 80%;
   margin: 40px auto 40px 10%;
 }
+.for_business img:hover {
+  transition: transform .6s ease;
+  transform: scale(1.1);
+}
 .for_business_p {
   margin: -6% auto 4% 10%;
   font-size: 0.9rem;
+}
+.for_business_p {
+  margin: -10px auto 30px 10%;
+  font-weight: bold;
 }
 footer {
   height: 600px; 
@@ -902,14 +931,36 @@ footer .link_camera ,footer .link_town {
 }
 
 
-
+@media screen and (max-width:380px) {
+  .slider img {
+    height: 60vh;
+  }
+}
 @media screen and (min-width:771px) {  
   .header {
-    height: 200px;
+    height: 175px;
   }
   .hidden_headerNav {
     opacity: 100%;
     color: #333;
+    margin-top: -10px;
+  }
+  .eventInfo, .youtube_contents,.news_block,.lineUP_box,.lineUP-contents img,
+  .global,.business_contents,.web_block    {
+    display: flex;
+  }
+  .openNav {
+    display: none;
+  }
+  .youtube_block1, .youtube_block1 {
+    width: 45%;
+  }
+  .header.HeightMin{
+    height: 86px;
+    margin-top: 0;
+  }
+  .HeightMin .hidden_headerNav{
+    margin: -90px 50px auto auto;
   }
   .slider img {
     margin: .5%;
@@ -920,29 +971,38 @@ footer .link_camera ,footer .link_town {
   }
   .slider img:hover {
     overflow: hidden;
-    margin: .5%;
   }
   .items {
     margin-top: 10%;
-    width: 100%;
   }
- h1 {
-    font-size: 2.7rem;
-    line-height: 50px;
+  body .wrapper h1 {
+    font-size: 2.6rem;
+  }
+  .items h2 {
+    position: absolute;
+    top: -100px;
+    right: 55%;
   }
   .contents {
     position: absolute;
-    margin-top: 100px;
     width: 30%;
-  }
-  h2 {
-    position: relative;
-    right: -26%;
   }
   #sub_slider {
     position: relative;
     right: -30%;
     width: 55%;
+    margin-left: 20px;
+    top: -20px;
+  }
+  #sub_slider img ,.slide_loves img {
+    min-width: 230px;
+    min-height: 230px;
+  }
+  #sliderLoves {
+    margin: -50% 6% 6% 40px;
+  }
+  .slide_loves img {
+    margin-right: 0px;
   }
   .contents .sub_title,.info_text p, .sentence, .news p,.info{
     font-size: .8rem;
@@ -952,65 +1012,71 @@ footer .link_camera ,footer .link_town {
   .sentence {
     width: 60%;
   }
-  .animation {
-    margin: -35% 0 -15% auto;
-    width: 250px;
-    z-index: 1;
+  .animation img{
+    margin: -80% 0 0 90%;
+    width: 220px;
+    z-index: -1;
+  }
+  .introduce h1 {
+    margin-top: -50px;
   }
   .introduce .more {
     width: 40%;
     margin-bottom: 80px;
   }
   .eventInfo {
-    display: flex;
     height: 100%;
     padding-bottom: 80px;
   }
   .event_box {
-    margin-left: 0%;
-    width: 30%;
     margin-top: 25%;
-  }
-  .eventContents {
-    width: 80%;
-    margin-right: 3%;
-    height: 150px;
-  }
-  .event-p img {
-    width: 110px;
   }
   .city {
     margin-right: 10%;
     text-align: right;
   }
-  .youtubeInfo {
-    margin: 100px auto -35px auto;
+  .eventContents {
+    margin: -10px 5% 30px auto;
+    height: 25%;
   }
-  .youtube_contents {
-   display: flex;
+  .youtubeInfo {
+    margin: 30px 2%;
+    padding-bottom: 2%;
   }
   .youtubeInfo h1 {
-    margin-top: -25%;
+    margin-top: -15%;
   }
-  .youtube_block1, .youtube_block2  {
+  .youtube_block1 {
     width: 45%;
-    margin-top: 120px;
+    margin-top: 160px;
+  }
+  .youtube_block2  {
+    width: 45%;
+    margin-top: 100px;
+  }
+  .youtubeInfo .sentence {
+    margin: -25% auto 10% 10% ;
   }
   .youtubeInfo .more {
-    width: 35%;
-    margin: -18% auto 22% 5%;
+    width: 30%;
+    margin: -10% auto 10% 3%;
   }
   .slide_youtube img {
     width: 300px;
     height: 300px;
   }
-  .plays img {
-    width: 50px;
-  }
   .circle {
-    margin-top: -35%;
-    width: 70px;
-    height: 70px;
+    margin-top: 40px;
+    left: 40%;
+  }
+  .youtube_block1 h1 {
+    height: 80px;
+  }
+  .youtube_block1 .sentence {
+    margin: 5% auto;
+  }
+  .youtubeInfo .more {
+    margin: 5% ;
   }
   .inner {
     width: 18px;
@@ -1029,9 +1095,8 @@ footer .link_camera ,footer .link_town {
     margin-left: 3%;
   }
   .news_block {
-    display: flex;
     width: 98%;
-}
+  }
 .new {
     position: relative;
     height: 20px;
@@ -1050,51 +1115,149 @@ footer .link_camera ,footer .link_town {
 .info {
   margin-left: 32%;
 }
-.news .more {
+.wrapper .news .more {
   width: 30%;
-  right: 5%;
-  margin-top: 100%;
+  margin-right: 5%;
+  margin-top: -240px;
+}
+body .ch {
+  margin: 35% 10% auto 0;
+  padding-bottom: 50%;
+}
+.ch_outline {
+  width: 35%;
   position: absolute;
+  top: -45px;
+  left: 20%;
 }
-.ch {
-  display: flex;
-  justify-content: space-around;
+.ch .scroll_up {
+  width: 35%;
 }
-.ch_outline, .ch .more {
-  width: 30%;
+.ch_outline p{
+  position: absolute;
+  top: 200px;
+  left: -50%;
 }
 .ch_block {
   width: 60%;
+  position: absolute;
+  right: -20%;
+  top: -160px;
+}
+.ch .more{
+  width: 30%;
+  left: 20%;
 }
 .ch img {
-  width: 400px;
-  height: 250px;
-  right: 50%;
+  height: 260px;
   position: absolute;
 }
-
+.lineUP_box {
+  margin: auto 5% ;
+  flex-wrap: wrap;
+}
 .lineUP-contents {
-  justify-content: space-around;
+  width: 240px;
+  margin: 5% 2%;
 }
 .lineUP-contents img {
-  display: flex;
   width: 240px;
   height: 120px;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
-.lineUP_block {
-  width: 30%;
+.lineUP-contents .details {
+  margin-top: 0;
+}
+.lineUP .moreInfo p {
+  margin-left: 15px;
+}
+.lineUP_block .moreInfo .arrow_bl {
+  margin: -12px;
 }
 .global {
-  display: flex;
+  flex-wrap: wrap;
 }
+.ch_outline p,.sub_sentence,.lineUP-contents .details {
+  font-size: .8rem;
 }
-
-@media screen and (min-width:807px) {
+.malta img,.paris img, .canada img {
+  width: 100px;
+  height: 100px;
+}
+.place {
+  font-size: 1rem;
+  margin-top: -30px;
+}
+.country .right {
+  display: none;
+}
+.global .more {
+  width: 30%;
+  position: absolute;
+  right: 5%;
+  bottom: 300px;
+}
+.for_business {
+  padding-bottom: 10%;
+}
+body .ch,.business_contents,.web_block,.lineUP_box   {
+  width: 90%;
+}
+.for_business img {
+  width: 40%;
+}
+.forBusiness_outline {
+  width: 45%;
+  margin-left: 50%;
+  margin-top: -25%;
+}
+.web_block {
+  margin: 4.5% 5%;
+}
+.web_store,.sns_block{
+  width: 45%;
+  margin: auto;
+}
+.slide_youtube .slick-slide {
+	transform: scale(0.8);
+	transition: all .5s;
+}
+.slide_youtube .slick-slide.slick-center{
+	transform: scale(1);
+	opacity: 1;
+}
+body .ch h1 {
+  font-size: 5rem;
+  width: 300px;
+}
+.ch p {
+  margin: 0 auto -20% 35%;
+}
+footer {
+  height: auto;
+  padding-bottom: 8%;
 }
 @media screen and (min-width:1021px) {
+  .animation img {
+    margin: -70% 0 0 95%;
+    width: 300px;
+  }
+  .for_business {
+    padding-bottom: 15%;
+  }
+  .ch {
+    padding-bottom: -10%;
+  }
+  .ch img {
+    width: 100%;
+    height: 400px;
+    margin: 0 -50% auto -15%;
+  }
+  .web_block {
+    width: 80%;
+    margin: 30px auto;
+  }
 }
-@media screen and (min-width:1201px) {
 }
-
   
