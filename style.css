@@ -7,12 +7,11 @@
     letter-spacing: 1px;
     font-weight: bold;
 }
-.header,body, .wrapper, .header,.animation,.animation img{
+.header,body, .wrapper, .header,.animation,.animation img,.eventInfo{
   max-width: 100%;
   width: 100%;
 }
 .header {
-  text-align: center;
   position: relative;
   margin-top: 43px;
 } 
@@ -21,21 +20,21 @@
 }
 .header p {
   font-size: 1.6rem;
-  margin: -14px auto 0 auto;
   letter-spacing: 3px;
 }
 .header.HeightMin,.eventContents,footer .link_camera ,footer .link_town,.lineUP-contents img {
   filter:drop-shadow(1px 1px 1px gray);
 }
-.header.HeightMin{
+.header.HeightMin,.dropNav {
+  border-radius: 5px;
   position: fixed;
   z-index: 999;
+  width: 97%;
+  margin: 0 1.5%;
+}
+.header.HeightMin{
   height: 70px;
   animation: DownAnime 0.5s forwards;
-  width: 97%;
-  margin: 0px 1.5%;
-  border-radius: 5px;
-  transition: .5s;
 }
 .header.HeightMin h1 {
   font-size: 1.4rem;
@@ -44,8 +43,11 @@
 .header.HeightMin p,.header.HeightMin .shapeTriangle_red{
   display: none;
 }
-.header.HeightMin .openNav{
-  margin-top: 10px;
+.dropNav {
+  height: auto;
+  top:-120%;
+  transition: all 0.6s;
+  padding-bottom: 5%;
 }
 @keyframes DownAnime{
 from {
@@ -57,20 +59,10 @@ to {
   transition: .5s;
 }
 }
-.dropNav {
-  position:fixed;
-  height: 66vh;
-  z-index: 999;
-  top:-120%;
-  transition: all 0.6s;
-  width: 98%;
-  margin: 0 1%;
-  border-radius: 5px;
-}
 .more,.lineUP-contents .moreInfo p,.infoAnimation p, .place p,.hidden_headerNav{
   font-size: 0.7rem;
 }
-.web_store p,.sns_p,.sub_title .shops,.forBusiness,h2,h4,.newsContents p {
+.web_store p,.sns_p,.sub_title, .shops,.forBusiness,h2,h4,.newsContents p ,.items h2{
   font-size: .8rem;
 }
 .info_text p,.eventContents p,.info,.sub_name, .sns_icon p, .lineUP p {
@@ -91,11 +83,8 @@ to {
 .dropNav.panelactive{
   top: 0;
 }
-.dropNav ul {
-  z-index: 999;
-}
-.dropNav .title, .dropNav .sub_title,.dropNav .sns_icon{
-  text-align: center; 
+.dropNav ul,.openNav,.openNav .span {
+  z-index: 9999;
 }
 .nav_name {
   margin: 5px 10px 5px 30px;
@@ -147,14 +136,12 @@ to {
 }
 .openNav{
   position:fixed;
-  z-index: 9999;
-  top:10px;
+  top: 10px;
   right: 10px;
   width: 50px;
   height:50px;
 }
 .openNav .span{
-  z-index: 9999;
   transition: all .4s;
   position: absolute;
   left: 12px;
@@ -187,7 +174,7 @@ p,.sub_name,.copyRight {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .sentence, .outline,.info{
-  font-family: 'Times New Roman', Times, serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .wrapper,.infoAnimation {
   overflow: hidden;
@@ -210,7 +197,7 @@ img:hover {
 .paris img, .canada img,.link_camera , .link_town,.for_business img,.link_town img,.info_nav .nav1 img ,.openNav .span {
   border-radius: 5px;
 }
-.hidden_headerNav, .hidden_headerNav li,.header h1,.header p,.new,.slick-dots,.more,.city,footer   {
+.hidden_headerNav, .hidden_headerNav li,.header,.header h1,.header p,.new,.slick-dots,.more,.city,footer,.dropNav .title, .dropNav .sub_title,.dropNav .sns_icon   {
   text-align: center;
 }
 .hidden_headerNav,.hidden_headerNav li,#int-slider,.eventContents,.circle,.arrowAnimation,#arrowAnim,
@@ -239,9 +226,9 @@ img:hover {
   top: -25px;
   left: -50px;
 }
-.slider {
+.slider,.slick-dots {
     position:relative;
-    z-index: 1;
+    z-index: 3;
 }
 .slider img{
     width: 100%;
@@ -249,10 +236,6 @@ img:hover {
 }
 .slider img:hover,#int-slider img:hover {
     opacity: .6;
-}
-.slick-dots {
-    position: relative;
-    z-index: 3;
 }
 .slick-dots li {
     display:inline-block;
@@ -271,7 +254,7 @@ img:hover {
   right: 20px;
   z-index: -1;
 }
-body h1 {
+body .wrapper h1,.header h1 {
   font-size: 3.7rem;
   font-weight: 200;
   line-height: 75px;
@@ -297,9 +280,8 @@ body h1 {
 }
 .items h2 {
   margin: 20px auto 20px -70%;
-  font-size: .8rem;
 }
-#int-slider {
+#int-slider,#info-slider {
   width: 125%;
   margin-left: 5%;
 }
@@ -307,10 +289,6 @@ body h1 {
   max-width: 310px;
   height: 310px;
   margin-left: 40px;
-}
-#info-slider {
-  width: 125%;
-  margin-left: 20px;
 }
 .info_text  {
   margin: auto auto 50px 60px;
@@ -340,8 +318,6 @@ h4 {
 }
 .sentence, .business_outline {
   width: 80%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 32px;
   z-index: 2;
 }
 .moreInfo {
@@ -401,10 +377,12 @@ h4 {
 .more {
   margin: 4% auto;
   width: 86%;
-  background: black;
   color: #FFF;
   padding: 12px;
   border-radius: 9999px;
+}
+.more ,.arrow_bl::after {
+  background: black;
 }
 .anime_block .more {
   margin-bottom: -3%;
@@ -446,20 +424,14 @@ h4 {
   border-top: 1px solid black;
   border-right: 1px solid black;
 }
-.arrow_bl::after {
-  background: black;
-}
 .eventInfo {
-  width: 100%;
   padding-bottom: 60px;
   z-index: 1;
   margin-bottom: 60px;
 }
 .eventInfo h1{
   margin: 0px auto -20px 8%;
-  line-height: 1px;
-  letter-spacing: 0.5px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .eventInfo .sentence {
   margin: 80px auto auto 8%;
@@ -467,7 +439,7 @@ h4 {
 .eventContents {
   width: 88%;
   padding: 1%;
-  margin: -10px 5% 30px 6%;
+  margin: -10px auto 30px auto;
   position: relative;
   z-index: 1;
   height: 30%;
@@ -482,6 +454,9 @@ h4 {
   margin: 10% 15%;
   line-height: 26px;
   letter-spacing: 3px;
+}
+.event_box h1 {
+  height: 5px;
 }
 .city {
   position: relative;
@@ -531,8 +506,10 @@ body {
 .youtube_block1 .sentence {
   margin-top: 10%;
 }
-.inner {
+.inner,.circle span,.circle img {
   position: absolute;
+}
+.inner {
   width: 20px;
   height: 20px;
   animation: rotateAnim 10s linear infinite;
@@ -546,13 +523,11 @@ body {
   100% { transform: rotate(360deg); }
 }
 .circle span {
-  position: absolute;
   inset: 0;
   font-weight: 100;
 }
 .circle img {
   width: 70px;
-  position: absolute;
   top: 20px;
   transform: rotate(30deg);
 }
@@ -587,15 +562,13 @@ body {
 .arrowAnimation {
   margin-bottom: 5px;
 }
-#arrowAnim {
+#arrowAnim ,.arrows{
   width: 5px;
   height: 5px;
   justify-content: center;
   align-items: center;
 }
 .arrows {
-  width: 5px;
-  height: 5px;
   border: 1px solid;
   border-color: black transparent transparent black;
   transform: rotate(135deg);
@@ -664,7 +637,7 @@ h3 {
 .new {
   border: solid 1px;
   width: 50px;
-  border-radius: 9999px;
+  border-radius: 999px;
   position: absolute;
   left: 200px;
   margin-top: 3%;
@@ -673,7 +646,7 @@ h3 {
   margin-top: 30px;
 }
 .info {
-  width: 55%;
+  width: 50%;
   position: absolute;
   left: 200px;
   margin-top: 50px;
@@ -690,14 +663,15 @@ h3 {
   position: relative;
   padding-bottom: 100%;
 }
+.ch h1,.ch p,.ch img,.ch .more{
+  position: absolute;
+}
 .ch h1 {
   font-size: 3.4rem;
-  position: absolute;
   left: -85px;
 }
 .ch p {
   margin-bottom: 0;
-  position: absolute;
   top: 80px;
   left: -18%;
 }
@@ -706,19 +680,13 @@ h3 {
   min-height: 218px;
   left: -8%;
   top: 135px;
-  position: absolute;
   z-index: 2;
 }
 .ch .more {
-  position: absolute;
   margin-left: -8%;
   width: 90%;
   bottom: 10%;
 }
- .lineUP .scroll_up h1{
-   margin-top: 50px;
-   font-size: 3.6rem;
- }
  .lineUP-contents{
    height: 500px;
    overflow: hidden;
@@ -729,7 +697,7 @@ h3 {
    transition: transform .6s ease;
  }
  .lineUP_box img:hover {
-  transform: scale(1.1);
+   transform: scale(1.1);
 }
  .lineUP_outline,.lineUP .details{
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -748,18 +716,17 @@ h3 {
   position: relative;
   padding-bottom: 30px;
 }
-.global-store .scroll_up h1 {
-  margin-top: -30px;
+.global-store .scroll_up h1,.global-store .scroll_up_2 h1, .global-store .scroll_up_3 h1,.global-store .sub_sentence{
   position: absolute;
 }
+.global-store .scroll_up h1{
+  margin-top: -30px;
+}
 .global-store .scroll_up_2 h1{
-  top: 70px;
-  position: absolute;
+  top: 40px;
 }
 .global-store .scroll_up_3 h1{
   top: 110px;
-  position: absolute;
-  transition: 1.3s ease-in-out;
 }
 .global {
   padding-top: 300px;
@@ -767,11 +734,10 @@ h3 {
 }
 .global-store .sub_sentence {
   margin: 0px auto 100px 10%;
-  position: absolute;
   top: 220px;
 }
 .country {
-  margin: -30px auto auto 5%;
+   margin: -30px auto auto 5%;
 }
  .place {
    font-size: 1.6rem;
@@ -797,7 +763,7 @@ h3 {
    transition: transform .6s ease;
  }
  .malta img:hover, .paris img:hover, .canada img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
  }
  .place p {
    margin-left: 45px;
@@ -853,9 +819,6 @@ h3 {
 	border-left: 60px solid transparent;
   border-radius: 30px;
 }
-.for_business {
-  overflow: hidden;
-}
 .for_business img {
   width: 80%;
   margin: 40px auto 40px 10%;
@@ -878,7 +841,6 @@ footer {
 footer .link_camera ,footer .link_town {
   width: 80%;
   margin: 0px auto 25px auto;
-  padding: 1%;
   height: 60px;
 }
 .link_town  {
@@ -935,6 +897,41 @@ footer .link_camera ,footer .link_town {
   .slider img {
     height: 60vh;
   }
+  body .wrapper h1 {
+    font-size: 2rem;
+    height: 50px;
+  }
+  .eventContents img {
+    width: 100px;
+    margin-top: 30px;
+  }
+  .sentence,.outline,.info,.event-o p {
+    font-size: .3rem;
+  }
+  .header.HeightMin h1 {
+    margin-left: -22%;
+  }
+  .circle {
+    left: 60%;
+    margin-top: 20px;
+  }
+  .slide_youtube img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+  }
+  .ch {
+    height: 100%;
+  }
+  .ch h1 {
+    left: -60px;
+  }
+  .ch .more {
+    margin-bottom: -80px;
+  }
+  .new, .info {
+    left: 170px;
+  }
 }
 @media screen and (min-width:771px) {  
   .header {
@@ -951,9 +948,6 @@ footer .link_camera ,footer .link_town {
   }
   .openNav {
     display: none;
-  }
-  .youtube_block1, .youtube_block1 {
-    width: 45%;
   }
   .header.HeightMin{
     height: 86px;
@@ -977,6 +971,7 @@ footer .link_camera ,footer .link_town {
   }
   body .wrapper h1 {
     font-size: 2.6rem;
+    height: 50px;
   }
   .items h2 {
     position: absolute;
@@ -1072,11 +1067,8 @@ footer .link_camera ,footer .link_town {
   .youtube_block1 h1 {
     height: 80px;
   }
-  .youtube_block1 .sentence {
+  .youtube_block1 .sentence, .youtubeInfo .more{
     margin: 5% auto;
-  }
-  .youtubeInfo .more {
-    margin: 5% ;
   }
   .inner {
     width: 18px;
@@ -1103,9 +1095,6 @@ footer .link_camera ,footer .link_town {
     right: 50%;
     padding: 1%;
 }
-.newsContents {
-  width: 35%;
-}
 .newsContents img {
   width: 90px;
   height: 90px;
@@ -1125,12 +1114,11 @@ body .ch {
   padding-bottom: 50%;
 }
 .ch_outline {
-  width: 35%;
   position: absolute;
   top: -45px;
   left: 20%;
 }
-.ch .scroll_up {
+.newsContents,.ch_outline,.ch .scroll_up {
   width: 35%;
 }
 .ch_outline p{
