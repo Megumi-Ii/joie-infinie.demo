@@ -473,17 +473,6 @@ h4 {
 .youtubeInfo h1 {
   margin-top: 20px;
 }
-@keyframes blurTriangle_blue {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-}
-.blurTriangle_blue, .blurTriangle_brown ,.blurTriangle_red{
-  animation: 3s  blurTriangle_blue infinite,3s  blurTriangle_brown infinite,3s blurTriangle_red infinite;
-}
 body {
   font-size: .6rem;
 }
@@ -795,29 +784,40 @@ h3 {
  .blurTriangle_red {
   transform: rotate(75deg);
 	border-bottom: 50px solid #de4d4d;
-	border-right: 90px solid transparent;
+	border-right: 60px solid transparent;
 	border-left: 70px solid transparent;
   position: absolute;
   right: 0;
 }
  .blurTriangle_blue {
-  transform: rotate(deg);
-	border-bottom: 30px solid darkblue;
-	border-right: 70px solid transparent;
-	border-left: 70px solid transparent;
+  transform: rotate(30deg);
+	border-bottom: 70px solid darkblue;
+	border-right: 50px solid transparent;
+	border-left: 30px solid transparent;
 }
 .blurTriangle_green {
   transform: rotate(178deg);
-	border-bottom: 40px solid rgb(37, 116, 37);
-	border-right: 60px solid transparent;
-	border-left: 100px solid transparent;
+	border-bottom: 60px solid rgb(37, 116, 37);
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
 }
 .blurTriangle_brown {
   transform: rotate(-20deg);
-	border-bottom: 60px solid #8a4121;
+	border-bottom: 30px solid #8a4121;
 	border-right: 60px solid transparent;
-	border-left: 60px solid transparent;
+	border-left: 30px solid transparent;
   border-radius: 30px;
+}
+@keyframes blurTriangle_blue {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+.blurTriangle_blue, .blurTriangle_brown ,.blurTriangle_red{
+  animation: 3s  blurTriangle_blue infinite,3s  blurTriangle_brown infinite,3s blurTriangle_red infinite;
 }
 .for_business img {
   width: 80%;
@@ -892,7 +892,6 @@ footer .link_camera ,footer .link_town {
   opacity: 1.0;
 }
 
-
 @media screen and (max-width:380px) {
   .slider img {
     height: 60vh;
@@ -905,8 +904,8 @@ footer .link_camera ,footer .link_town {
     width: 100px;
     margin-top: 30px;
   }
-  .sentence,.outline,.info,.event-o p {
-    font-size: .3rem;
+  .sentence,.outline,.info,.event-o p,.sub_sentence {
+    font-size: .8rem;
   }
   .header.HeightMin h1 {
     margin-left: -22%;
@@ -921,13 +920,10 @@ footer .link_camera ,footer .link_town {
     margin-top: 50px;
   }
   .ch {
-    height: 100%;
+    height: 480px;
   }
-  .ch h1 {
-    left: -60px;
-  }
-  .ch .more {
-    margin-bottom: -80px;
+  .ch_outline .scroll_up h1 {
+    margin-left: 15%;
   }
   .new, .info {
     left: 170px;
