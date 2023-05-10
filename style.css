@@ -933,10 +933,6 @@ footer .link_camera ,footer .link_town {
   .new, .info {
     left: 170px;
   }
-.canada img{
-
-}
-
 @media screen and (min-width:771px) {  
   .header {
     height: 175px;
