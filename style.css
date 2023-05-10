@@ -771,35 +771,36 @@ h3 {
 }
 .blurTriangle_red, .blurTriangle_blue, .blurTriangle_green,.blurTriangle_pink,.blurTriangle_brown{
   width: 5%;
-  filter: blur(.5rem);
+  filter: blur(.3rem);
 }
 .blurTriangle_pink {
   transform: rotate(75deg);
 	border-bottom: 50px solid #ab0f50;
-	border-right: 90px solid transparent;
+	border-right: 30px solid transparent;
 	border-left: 70px solid transparent;
   position: absolute;
-  left: -68px;
+  left: -8px;
 }
  .blurTriangle_red {
   transform: rotate(75deg);
-	border-bottom: 50px solid #de4d4d;
-	border-right: 60px solid transparent;
+	border-bottom: 20px solid #de4d4d;
+	border-right: 30px solid transparent;
 	border-left: 70px solid transparent;
   position: absolute;
   right: 0;
 }
  .blurTriangle_blue {
-  transform: rotate(30deg);
-	border-bottom: 70px solid darkblue;
-	border-right: 50px solid transparent;
-	border-left: 30px solid transparent;
+  transform: rotate(90deg);
+	border-bottom: 30px solid darkblue;
+	border-right: 20px solid transparent;
+	border-left: 60px solid transparent;
+  left: -50px;
 }
 .blurTriangle_green {
   transform: rotate(178deg);
-	border-bottom: 60px solid rgb(37, 116, 37);
-	border-right: 20px solid transparent;
-	border-left: 20px solid transparent;
+	border-bottom: 20px solid rgb(37, 116, 37);
+	border-right: 30px solid transparent;
+	border-left: 70px solid transparent;
 }
 .blurTriangle_brown {
   transform: rotate(-20deg);
@@ -808,7 +809,7 @@ h3 {
 	border-left: 30px solid transparent;
   border-radius: 30px;
 }
-@keyframes blurTriangle_blue {
+@keyframes blurTriangle_red {
   0%, 100% {
     transform: translateY(0);
   }
@@ -892,6 +893,7 @@ footer .link_camera ,footer .link_town {
   opacity: 1.0;
 }
 
+
 @media screen and (max-width:380px) {
   .slider img {
     height: 60vh;
@@ -909,6 +911,9 @@ footer .link_camera ,footer .link_town {
   }
   .header.HeightMin h1 {
     margin-left: -22%;
+  }
+  .animation {
+    margin-bottom: 80px;
   }
   .circle {
     left: 60%;
@@ -928,7 +933,10 @@ footer .link_camera ,footer .link_town {
   .new, .info {
     left: 170px;
   }
+.canada img{
+
 }
+
 @media screen and (min-width:771px) {  
   .header {
     height: 175px;
@@ -1244,4 +1252,4 @@ footer {
   }
 }
 }
-  
+}
