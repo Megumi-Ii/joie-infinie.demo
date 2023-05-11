@@ -305,12 +305,12 @@ h4 {
 }
 .shapeTriangle_blue {
   transform: rotate(-35deg);
-	border-bottom: 35px solid #1760a0; 
-	border-right: 60px solid transparent; 
-	border-left: 60px solid transparent; 
+	border-bottom: 30px solid #1760a0; 
+	border-right: 20px solid transparent; 
+	border-left: 40px solid transparent; 
   position: absolute;
   width: 5%;
-  right: -100px;
+  right: 0px;
   margin-top: -30px;
 }
 .introduce {
@@ -334,7 +334,7 @@ h4 {
   margin-top: -30px;
   position: relative;
   width: 40%;
-  padding-bottom: 50%;
+  padding-bottom: 60%;
 }
 .animation img {
   position: absolute;
@@ -771,21 +771,21 @@ h3 {
 }
 .blurTriangle_red, .blurTriangle_blue, .blurTriangle_green,.blurTriangle_pink,.blurTriangle_brown{
   width: 5%;
-  filter: blur(.3rem);
+  filter: blur(.2rem);
 }
 .blurTriangle_pink {
   transform: rotate(75deg);
-	border-bottom: 50px solid #ab0f50;
-	border-right: 30px solid transparent;
-	border-left: 70px solid transparent;
+	border-bottom: 20px solid #ab0f50;
+	border-right: 60px solid transparent;
+	border-left: 20px solid transparent;
   position: absolute;
-  left: -8px;
+  left: -68px;
 }
  .blurTriangle_red {
   transform: rotate(75deg);
 	border-bottom: 20px solid #de4d4d;
 	border-right: 30px solid transparent;
-	border-left: 70px solid transparent;
+	border-left: 50px solid transparent;
   position: absolute;
   right: 0;
 }
@@ -794,7 +794,6 @@ h3 {
 	border-bottom: 30px solid darkblue;
 	border-right: 20px solid transparent;
 	border-left: 60px solid transparent;
-  left: -50px;
 }
 .blurTriangle_green {
   transform: rotate(178deg);
@@ -805,9 +804,11 @@ h3 {
 .blurTriangle_brown {
   transform: rotate(-20deg);
 	border-bottom: 30px solid #8a4121;
-	border-right: 60px solid transparent;
+	border-right: 50px solid transparent;
 	border-left: 30px solid transparent;
   border-radius: 30px;
+  position: absolute;
+  right: 0px;
 }
 @keyframes blurTriangle_red {
   0%, 100% {
@@ -893,7 +894,6 @@ footer .link_camera ,footer .link_town {
   opacity: 1.0;
 }
 
-
 @media screen and (max-width:380px) {
   .slider img {
     height: 60vh;
@@ -906,7 +906,7 @@ footer .link_camera ,footer .link_town {
     width: 100px;
     margin-top: 30px;
   }
-  .sentence,.outline,.info,.event-o p,.sub_sentence {
+  .sentence,.outline,.info,.event-o p,.sub_sentence,.details,.business_outline {
     font-size: .8rem;
   }
   .header.HeightMin h1 {
@@ -933,6 +933,7 @@ footer .link_camera ,footer .link_town {
   .new, .info {
     left: 170px;
   }
+}
 @media screen and (min-width:771px) {  
   .header {
     height: 175px;
@@ -970,7 +971,7 @@ footer .link_camera ,footer .link_town {
     margin-top: 10%;
   }
   body .wrapper h1 {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
     height: 50px;
   }
   .items h2 {
@@ -1248,4 +1249,4 @@ footer {
   }
 }
 }
-}
+  
