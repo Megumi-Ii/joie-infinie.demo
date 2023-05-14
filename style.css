@@ -889,14 +889,20 @@ footer .link_camera ,footer .link_town {
   opacity: .4;
 }
 @media screen and (max-width:380px) {
-  img {
+  .slider {
     object-fit: contain;
+    height:500px;
+    width: 300px;
   }
   .slider img {
-    object-fit: fill;
+    max-width: 100%;
+    max-height: 100%;
   }
-  .header .title {
-    font-size: 1rem;
+  .header h1 {
+    font-size: 2rem;
+  }
+  .header p {
+    font-size: 1.2rem;
   }
   body .slider {
     width: 100%;
@@ -943,6 +949,46 @@ footer .link_camera ,footer .link_town {
     font-size: 1rem;
     margin-left: 10%;
     width: 30%;
+}
+.arrow {
+  left:5%; 
+}
+.arrow_bl {
+  left: -3%;
+}
+.arrow::before, .arrow_bl::before{
+  top: 8.6px;
+}
+.arrow::after, .arrow_bl::after  {
+  top: 8.6px;
+}
+.moreInfo .arrow_bl {
+  position: relative;
+  top: 5px;
+}
+.introduce .moreInfo .arrow_bl::before{
+  top: 2px;
+  position: absolute;
+}
+.introduce .moreInfo .arrow_bl::after{
+  top: 2px;
+  position: absolute;
+}
+.introduce .moreInfo .arrow_bl {
+  position: relative;
+  top: 5px;
+}
+.moreInfo .arrow_bl {
+  position: relative;
+  top: 6px;
+}
+.moreInfo .arrow_bl::before{
+  top: 3px;
+  position: absolute;
+}
+.moreInfo .arrow_bl::after{
+  top: 3px;
+  position: absolute;
 }
 }
 @media screen and (min-width:771px) {  
