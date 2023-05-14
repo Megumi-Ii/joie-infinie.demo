@@ -964,14 +964,14 @@ footer .link_camera ,footer .link_town {
 }
 .moreInfo .arrow_bl {
   position: relative;
-  top: 5px;
+  top: 6px;
 }
 .introduce .moreInfo .arrow_bl::before{
-  top: 2px;
+  top: 3px;
   position: absolute;
 }
 .introduce .moreInfo .arrow_bl::after{
-  top: 2px;
+  top: 3px;
   position: absolute;
 }
 .introduce .moreInfo .arrow_bl {
@@ -980,14 +980,14 @@ footer .link_camera ,footer .link_town {
 }
 .moreInfo .arrow_bl {
   position: relative;
-  top: 6px;
+  top: 9px;
 }
 .moreInfo .arrow_bl::before{
-  top: 3px;
+  top: 6px;
   position: absolute;
 }
 .moreInfo .arrow_bl::after{
-  top: 3px;
+  top: 6px;
   position: absolute;
 }
 }
